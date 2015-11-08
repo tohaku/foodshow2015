@@ -1,0 +1,40 @@
+.header {
+    display: block;
+    overflow: hidden;
+    height: 60px;
+    background-color: #0098ff;
+    box-shadow: black 2px 2px 3px 0;
+}
+
+.nav {
+    display: inline-block;
+    float: right;
+    clear: right;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav li a {
+    font-family: Montserrat, sans-serif;
+    color: #070707;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.nav li a:hover {
+    text-shadow: black 4px 4px 6px;
+}
+
+.nav li:active {
+    text-shadow: #faf5f5 2px 2px 0px;
+}
+
+#pageTitle {
+    display: inline-block;
+    margin: 10px;
+    font-family: Oswald sans-serif;
+    font-size:28px;
+}
