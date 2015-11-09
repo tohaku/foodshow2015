@@ -69,10 +69,10 @@
         <entry file="file://$PROJECT_DIR$/createdbs.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.3130755">
-              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
                 <element signature="e#6#135#0#PHP" expanded="true" />
-                <marker date="1447106538280" expanded="true" signature="343:562" placeholder="CREATE TABLE..registeredSchools..." />
+                <marker date="1447106613314" expanded="true" signature="340:559" placeholder="CREATE TABLE..registeredSchools..." />
               </folding>
             </state>
           </provider>
@@ -348,10 +348,10 @@
     <entry file="file://$PROJECT_DIR$/createdbs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3130755">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
             <element signature="e#6#135#0#PHP" expanded="true" />
-            <marker date="1447106538280" expanded="true" signature="343:562" placeholder="CREATE TABLE..registeredSchools..." />
+            <marker date="1447106613314" expanded="true" signature="340:559" placeholder="CREATE TABLE..registeredSchools..." />
           </folding>
         </state>
       </provider>

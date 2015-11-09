@@ -8,7 +8,7 @@
  */
 
 
-    if($db = sqlite_open('foodshow.db', $sqliteerror)){
+    if($db = sqlite_open('foodshow', $sqliteerror)){
         echo "Database created / opened successfully, adding tables";
     }
     else {
