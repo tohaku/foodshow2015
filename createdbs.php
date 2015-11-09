@@ -7,14 +7,33 @@
  * Creates the SQLite DBs needed for food show
  */
 
+    try {
+        //creating / opening database
+        $db = new PDO('sqlite:foodshow.sqlite3');
+        $db -> $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+        //creating registered schools table in database
+        $db -> exec("CREATE TABLE IF NOT EXISTS registeredSchools (
+                    id INTEGER PRIMARY KEY,
+                    FName TEXT,
+                    LName TEXT,
+                    SchoolName TEXT,
+                    PhoneNum  TEXT,
+                    Email TEXT)");
+        echo "Database and tables created successfully";
+    }
+    catch(PDOException $e) {
+        //spit out error message if exist
+        echo $e->getMessage();
+    }
+/*
     if($db = sqlite_open('foodshow', $sqliteerror)){
         echo "Database created / opened successfully, adding tables";
     }
     else {
         die($sqliteerror);
     }
-/*
+
     $sql =<<< EOF
         CREATE TABLE registeredSchools(
         ID INT PRIMARY KEY NOT NULL,
