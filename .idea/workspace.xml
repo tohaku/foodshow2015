@@ -68,11 +68,11 @@
       <file leaf-file-name="createdbs.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/createdbs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0">
-              <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.21731123">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding>
                 <element signature="e#6#135#0#PHP" expanded="true" />
-                <marker date="1447105688097" expanded="true" signature="340:559" placeholder="CREATE TABLE..registeredSchools..." />
+                <marker date="1447106173721" expanded="true" signature="346:565" placeholder="CREATE TABLE..registeredSchools..." />
               </folding>
             </state>
           </provider>
@@ -347,11 +347,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/createdbs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0">
-          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.21731123">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
             <element signature="e#6#135#0#PHP" expanded="true" />
-            <marker date="1447105688097" expanded="true" signature="340:559" placeholder="CREATE TABLE..registeredSchools..." />
+            <marker date="1447106173721" expanded="true" signature="346:565" placeholder="CREATE TABLE..registeredSchools..." />
           </folding>
         </state>
       </provider>
