@@ -7,20 +7,12 @@
  * Creates the SQLite DBs needed for food show
  */
 
-    class MyDB extends SQLite3 {
-        function __construct(){
-            $this->open('foodshow.db');
-            echo("Database created \n");
-        }
-    }
-    $db = new MyDB();
 
-    if(!$db){
-        echo $db->lastErrorMsg();
-        exit; //if can't open DB, exit PHP
+    if($db = sqlite_open('foodshow', $sqliteerror)){
+        echo "Database created / opened successfully, adding tables";
     }
     else {
-        echo "Database opened successfully\n";
+        die($sqliteerror);
     }
 
     $sql =<<< EOF
