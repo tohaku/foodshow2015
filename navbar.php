@@ -3,8 +3,8 @@
         <?php echo $pageHeader; ?>
     </div>
     <ul class="nav">
-        <li>School<br>Registration</li>
-        <li>Vendor<br>Registration</li>
+        <li>School Registration</li>
+        <li>Vendor Registration</li>
         <li>Directions</li>
     </ul>
 </div>

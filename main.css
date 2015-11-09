@@ -15,6 +15,8 @@
 .nav li {
     display: inline-block;
     padding: 10px;
+    border-left-style: dotted;
+    border-left-color: #000;
 }
 
 .nav li a {
