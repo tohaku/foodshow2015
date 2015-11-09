@@ -14,7 +14,7 @@
     else {
         die($sqliteerror);
     }
-
+/*
     $sql =<<< EOF
         CREATE TABLE registeredSchools(
         ID INT PRIMARY KEY NOT NULL,
@@ -32,3 +32,4 @@ EOF;
         echo "Registered schools table created successfully";
     }
     $db->close();
+*/
