@@ -5,9 +5,7 @@
 </head>
 <body>
 <div class = "header">
-    <div id = "pageTitle">
-        <?php echo $pageHeader; ?>
-    </div>
+    <span id="pageTitle"><?php echo $pageHeader; ?></span>
     <ul class="nav">
         <li><a href="schoolregistration.php">School Registration</a></li>
         <li><a href="vendorregistration.php">Vendor Registration</a></li>
