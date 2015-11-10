@@ -9,7 +9,8 @@
 .nav {
     display: inline-block;
     float: right;
-    clear: right;
+    clear: both;
+    z-index: -1;
 }
 
 .nav li {

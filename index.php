@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-    $pageTitle = "Foodshow 2015";
+    $pageTitle = "Food Show 2015";
     $pageHeader = "Goldstar Norcal Food Show 2016";
 ?>
 
