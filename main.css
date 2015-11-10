@@ -52,8 +52,14 @@ label {
     width: 140px;
     text-align: right;
 }
+
+.registrationForms {
+    width: 600px;
+    margin: 100 auto;
+}
+
 .registrationForms input {
-    display: block;
+    display: inline-block;
     width: 200px;
     text-align: left;
 
