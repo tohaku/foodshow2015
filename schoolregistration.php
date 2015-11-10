@@ -9,15 +9,15 @@
 <div id="container">
     <form class="registrationForms" name="schoolRegistration">
         <label for="schoolName">School Name:</label>
-        <input type="text" value="Enter school name" id="schoolName" name="schoolName"/>
+        <input type="text" value="Enter school name" id="schoolName" name="schoolName"/><br>
         <label for="FName">First Name:</label>
-        <input type="text" value="First name" id="FName" name="FName"/>
+        <input type="text" value="First name" id="FName" name="FName"/><br>
         <label for="LName">Last Name:</label>
-        <input type="text" value="Last name" id="LName" name="LName"/>
+        <input type="text" value="Last name" id="LName" name="LName"/><br>
         <label for="phoneNumber">Phone Number:</label>
-        <input type="text" value="707-111-2222" id="phoneNumber" name="phoneNumber"/>
+        <input type="text" value="707-111-2222" id="phoneNumber" name="phoneNumber"/><br>
         <label for="email">Email:</label>
-        <input type="text" value="email@hostname.com" id="email" name="email"/>
+        <input type="text" value="email@hostname.com" id="email" name="email"/><br>
     </form>
 </div>
 
