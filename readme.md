@@ -2,6 +2,8 @@
 Food show registration page for both vendors and customers using PHP and using PHP Storm.
 
 ##Change Log
+**11/10/2015**
+Added Google fonts
 **11/9/2015**
 Issues with NoSQL and PHP, moving to already configured MySQL
 Added Normalize CSS

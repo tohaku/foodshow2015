@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class = "header">
-    <span id="pageTitle"><?php echo $pageHeader; ?></span>
+    <span id="pageTitle"><a href="index.php"><?php echo $pageHeader; ?></a></span>
     <ul class="nav">
         <li><a href="schoolregistration.php">School Registration</a></li>
         <li><a href="vendorregistration.php">Vendor Registration</a></li>
