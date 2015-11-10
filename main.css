@@ -85,4 +85,12 @@ label {
     display: inline-block;
     width: 200px;
     text-align: left;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid black;
+}
+
+.registrationForms input:focus {
+    background-color: #696969;
 }
