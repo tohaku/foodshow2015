@@ -5,6 +5,7 @@
  * Date: 11/9/2015
  * Time: 1:10 PM
  * Creates the SQLite DBs needed for food show
+ * Moving to MySQL, possible bad PHP config for NoSQL, MySQl is already setup on server
  */
 
     try {

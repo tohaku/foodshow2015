@@ -40,3 +40,9 @@
     font-family: Oswald sans-serif;
     font-size:28px;
 }
+
+#container {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+}
