@@ -3,6 +3,7 @@
     overflow: hidden;
     height: 60px;
     background-color: #0098ff;
+    padding: 10px;
     box-shadow: black 2px 2px 3px 0;
 }
 
@@ -10,8 +11,8 @@
     display: inline-block;
     float: right;
     clear: both;
+    margin-top: -30%;
     z-index: -1;
-    padding: 10px;
 }
 
 .nav li {
