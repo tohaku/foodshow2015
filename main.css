@@ -46,6 +46,11 @@
     display: block;
     width: 600px;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'PT Sans' , 'sans-serif';
 }
 
 label {
@@ -63,5 +68,4 @@ label {
     display: inline-block;
     width: 200px;
     text-align: left;
-
 }
