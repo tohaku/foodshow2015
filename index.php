@@ -17,7 +17,7 @@
         1000 Fairgrounds Drive Vallejo CA, 94589<br>
         (707)644-1200 / 1(800)321-2211</span><br>
         Use the links below to register online and get discounted rates!<br>
-        <a href="#" target="_blank">$109 per night for 1 king bed</a>
+        <a href="#" target="_blank">$109 per night for 1 king bed</a><br>
         <a href="#" target="_blank">$119 per night for 2 queen beds</a>
     </p>
     <h2>Registered Processors<br><span class="headerSubText">with more to come</span></h2>
