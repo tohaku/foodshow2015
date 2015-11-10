@@ -11,6 +11,7 @@
     display: inline-block;
     float: right;
     clear: both;
+    margin: 10px;
     z-index: -1;
 }
 
