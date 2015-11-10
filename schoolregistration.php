@@ -7,7 +7,7 @@
 
 <?php require("navbar.php");?>
 <div id="container">
-    <form name="schoolRegistration">
+    <form class="registrationForms" name="schoolRegistration">
         <label for="schoolName">School Name:</label>
         <input type="text" value="Enter school name" id="schoolName" name="schoolName"/>
         <label for="FName">First Name:</label>

@@ -7,7 +7,7 @@
 
 <?php require("navbar.php");?>
 
-    <form>
+    <form class="registrationForms" name="vendorRegistration">
         <label for="vendorName">Vendor Name:</label>
         <input type="text" value="Enter vendor name" id="vendorName" name="vendorName"/>
         <label for="FName">First Name:</label>
