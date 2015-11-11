@@ -6,7 +6,7 @@
     <link href="main.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-        $("input[type='text']").on("click", function() {
+        $(".registrationForms input").on("click", function() {
             $(this).select();
         });
     </script>
