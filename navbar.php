@@ -9,8 +9,8 @@
 <div class = "header">
     <span id="pageTitle"><a href="index.php"><?php echo $pageHeader; ?></a></span>
     <ul class="nav">
-        <li><a href="schoolregistration.php">School Registration</a></li>
-        <li><a href="vendorregistration.php">Vendor Registration</a></li>
-        <li><a href="directions.php">Directions</a></li>
+        <li class="<?php if ($section=="school"){echo"selectedPage";}?>><a href="schoolregistration.php">School Registration</a></li>
+        <li class="<?php if ($section=="vendor"){echo"selectedPage";}?>"><a href="vendorregistration.php">Vendor Registration</a></li>
+        <li class="<?php if ($section=="directions"){echo"selectedPage";}?>"><a href="directions.php">Directions</a></li>
     </ul>
 </div>

@@ -3,6 +3,7 @@
 <?php
     $pageTitle = "Vendor Registration";
     $pageHeader = "Goldstar Norcal Food Show 2016";
+    $section = "vendor";
 ?>
 
 <?php require("navbar.php");?>

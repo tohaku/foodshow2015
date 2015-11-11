@@ -84,16 +84,20 @@ label {
 
 .registrationForms input {
     display: inline-block;
-    width: 200px;
+    width: 400px;
     margin: 20px 0 20px;
     text-align: left;
     border: 0;
     outline: 0;
     background: transparent;
     border-bottom: 2px solid black;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .registrationForms input:focus {
     background-color: #D0D0D0;
+}
+
+.selectedPage {
+    border-bottom: solid 2px #0000FF;
 }

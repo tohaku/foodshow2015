@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-$pageTitle = "School Registration";
-$pageHeader = "Goldstar Norcal Food Show 2016";
+    $pageTitle = "School Registration";
+    $pageHeader = "Goldstar Norcal Food Show 2016";
+    $section = "directions";
 ?>
 
 <?php require("navbar.php");?>

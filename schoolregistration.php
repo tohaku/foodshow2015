@@ -3,6 +3,7 @@
 <?php
     $pageTitle = "School Registration";
     $pageHeader = "Goldstar Norcal Food Show 2016";
+    $section = "school";
 ?>
 
 <?php require("navbar.php");?>
