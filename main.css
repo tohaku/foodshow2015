@@ -85,7 +85,9 @@ label {
 .registrationForms input {
     display: inline-block;
     width: 400px;
+    height: 60px;
     margin: 20px 0 20px;
+    padding: 6px;
     text-align: left;
     border: 0;
     outline: 0;
@@ -96,6 +98,11 @@ label {
 
 .registrationForms input:focus {
     background-color: #D0D0D0;
+}
+
+.registrationForms label {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .selectedPage {
