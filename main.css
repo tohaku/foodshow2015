@@ -61,9 +61,10 @@ html {
     display: block;
     width: 600px;
     margin: 160px auto 20px;
+    padding: 60px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    background-color: #fff;
+    background-color: #D0D0D0;
 }
 
 h2 {
@@ -87,11 +88,8 @@ label {
 }
 
 .registrationForms {
-    padding: 20px;
     width: 600px;
     margin: 0 auto;
-    background-color: #D0D0D0;
-
 }
 
 .registrationForms input[type=text] {
