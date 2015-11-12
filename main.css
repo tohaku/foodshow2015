@@ -82,7 +82,7 @@ label {
     margin: 200px auto 60px;
 }
 
-.registrationForms input {
+.registrationForms input[type=text] {
     display: inline-block;
     width: 400px;
     height: 40px;
@@ -93,17 +93,23 @@ label {
     outline: 0;
     background: transparent;
     border-bottom: 2px solid black;
-    box-shadow:inset -4px -5px 19px -4px black;
+    box-shadow:inset -4px -5px 4px -4px #D8D8D8;
     font-size: 20px;
 }
 
-.registrationForms input:focus {
+.registrationForms input[type=text]:focus {
     background-color: #D0D0D0;
 }
 
 .registrationForms label {
     font-size: 20px;
     font-weight: bold;
+}
+
+.formError {
+    font-size: 18px;
+    padding: 4px;
+    color: #F00000;
 }
 
 .selectedPage {

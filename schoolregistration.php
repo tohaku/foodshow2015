@@ -43,7 +43,7 @@
         }
 
         //combined not empty and email verification
-        if(!empty($_POST["email"]) && !!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        if(!empty($_POST["email"]) && if(!!filter_var($email, FILTER_VALIDATE_EMAIL)){
             $email = testInput($_POST["email"]);
         }else{
             $emailError = "*";
