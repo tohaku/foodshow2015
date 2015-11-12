@@ -13,7 +13,7 @@
         });
     </script>
 
-    <?php require("/inc/config.php");?>
+    <?php require("inc/config.php");?>
 </head>
 <body>
 <div class = "header">
