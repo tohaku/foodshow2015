@@ -8,7 +8,7 @@
 
 <?php require("navbar.php");?>
 <div id="container">
-    <h2>1. Details</h2>
+    <h2>Details</h2>
     <p>The event will be held at the Solano County Fairgrounds on October 25th.<br>
         The event starts at 10:30am and runs until 2:00pm.<br>
         Vendors may come in as early as 6:30am to setup before the event starts.<br>

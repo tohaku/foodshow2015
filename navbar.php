@@ -12,7 +12,7 @@
             });
         });
     </script>
-    <?php require("databasefunctions.php");?>
+    <?php require_once("databasefunctions.php");?>
 </head>
 <body>
 <div class = "header">
