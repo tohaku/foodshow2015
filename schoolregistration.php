@@ -68,6 +68,7 @@
             //test echo
            // echo $schoolName . "<br>" . $FName . "<br>" . $LName . "<br>" . $phoneNumber . "<br>" . $email;
             $postedData = registerSchool($schoolName, $FName,$LName,$phoneNumber,$email); //can use return value to handle the page
+            echo $postedData;
         }
     }
 
