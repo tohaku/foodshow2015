@@ -72,7 +72,7 @@
             $dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
             $sql = "INSERT INTO registeredSchools".
                 "(schoolName,FName,LName,phoneNumber,email)".
-                "VALUES(`$schoolName`,`$FName`,`$LName`,`$email`,`$phone`)";
+                "VALUES('$schoolName','$FName','$LName','$phoneNumber','$email')";
             mysql_select_db('foodshow2015');
             $retval = mysql_query($sql, $dbconn);
 
