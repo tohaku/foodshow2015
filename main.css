@@ -29,9 +29,7 @@
 }
 
 .nav li a:hover {
-    /*text-shadow: black 4px 4px 6px;*/
-    border-bottom: solid;
-    border-color: #000;
+    font-weight: bold;
 }
 
 .nav li:active {
@@ -43,6 +41,7 @@
     margin: 10px;
     font-family: Oswald sans-serif;
     font-size:28px;
+    color: #000;
 }
 
 #pageTitle a {
@@ -93,7 +92,6 @@ label {
     outline: 0;
     background: transparent;
     border-bottom: 2px solid black;
-    box-shadow:inset -4px -5px 12px -4px #D8D8D8;
     font-size: 20px;
 }
 
