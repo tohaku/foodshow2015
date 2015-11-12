@@ -52,7 +52,7 @@
 #container {
     display: block;
     width: 600px;
-    margin: 0 auto;
+    margin: 160px auto 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
@@ -79,7 +79,7 @@ label {
 
 .registrationForms {
     width: 600px;
-    margin: 200px auto 60px;
+    margin: 0 auto;
 }
 
 .registrationForms input[type=text] {
