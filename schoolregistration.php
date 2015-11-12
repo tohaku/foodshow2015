@@ -73,6 +73,7 @@
         <input type="text" value="707-111-2222" id="phoneNumber" name="phoneNumber"/><br>
         <label for="email">Email:</label>
         <input type="text" value="email@hostname.com" id="email" name="email"/><span class="formError"><?php echo $emailError;?></span><br>
+        <input type="submit" value="Register"/>
     </form>
 </div>
 
