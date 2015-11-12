@@ -12,7 +12,7 @@
             });
         });
     </script>
-    <?php include("/inc/config.php");?>
+
     <?php require("databasefunctions.php");?>
 </head>
 <body>
