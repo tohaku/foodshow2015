@@ -13,6 +13,14 @@ function registerSchool($schoolName,$FName,$LName,$email,$phone){
         $sql = 'INSERT INTO registeredSchools'.
             '(schoolName,FName,LName,phoneNumber,email)'.
             'VALUES($schoolName,$FName,$LName,$email,$phone)';
+    mysqli_select_db('foodshow2015');
+    $retval = mysqli_query($sql, $dbconn);
+
+    if(!$retval){
+        return false;
+
+    }
+    else {return true;}
     mysqli_close($dbconn);
 }
 
