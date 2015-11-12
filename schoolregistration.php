@@ -15,7 +15,7 @@
     $phoneNumber = "";
     $email = "";
     //errors for required fields or validation
-    $formError = "";
+    $formError = false;
     $schoolNameError = "";
     $FNameError = "";
     $LNameError = "";
@@ -26,18 +26,21 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         if(empty($_POST["schoolName"])){
             $schoolNameError = "*";
+            $formError = true;
         }else {
             $schoolName = testInput($_POST["schoolName"]);
         }
 
         if(empty($_POST["FName"])){
             $FNameError = "*";
+            $formError = true;
         }else {
             $FName = testInput($_POST["FName"]);
         }
 
         if(empty($_POST["LName"])){
             $LNameError = "*";
+            $formError = true;
         }else {
             $LName = testInput($_POST["LName"]);
         }
@@ -48,11 +51,13 @@
             if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
                 //filter_var returns false if not an email, returns email string if an email
                 $emailError = "*";
+                $formError = true;
             }else{
 
             }
         }else{
             $emailError = "*";
+            $formError = true;
         }
 
         $phoneNumber = testInput($_POST["phoneNumber"]);
@@ -69,7 +74,7 @@
 
 <div id="container">
     <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="schoolRegistration">
-        <?php if($schoolNameError||$FNameError||$LNameError||$emailError == "*"){echo "<p class='formError'>Error: Please recheck your information</p>";}?>
+        <?php if($formError){echo "<p class='formError'>Error: Please recheck your information</p>";}?>
         <label for="schoolName">School Name:</label>
         <input type="text" value="Enter school name" id="schoolName" class="<?php if($schoolNameError=="*"){echo "formError";}?>" name="schoolName"/><span class="formError"><?php echo $schoolNameError;?></span><br>
         <label for="FName">First Name:</label>
