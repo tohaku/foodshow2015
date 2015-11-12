@@ -19,3 +19,4 @@ function registerSchool($schoolName,$FName,$LName,$email,$phone){
 function returnRegisteredSchools(){
 
 }
+?>
