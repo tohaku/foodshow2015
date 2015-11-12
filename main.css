@@ -1,11 +1,10 @@
 html {
     background-color: #000;
-    background: url(pics/bg2.png) no-repeat center center fixed;
+    background: url(pics/bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    opacity: 0.5;
 }
 
 .header {
@@ -64,6 +63,7 @@ html {
     margin: 160px auto 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    background-color: #fff;
 }
 
 h2 {
