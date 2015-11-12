@@ -14,7 +14,7 @@ function registerSchool($schoolName,$FName,$LName,$email,$phone){
             '(schoolName,FName,LName,phoneNumber,email)'.
             'VALUES($schoolName,$FName,$LName,$email,$phone)';
     mysqli_select_db('foodshow2015');
-    $retval = mysqli_query($sql, $dbconn);
+    $retval = mysql_query($sql, $dbconn);
 
     if(!$retval){
         return false;
