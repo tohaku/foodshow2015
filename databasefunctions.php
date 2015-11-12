@@ -6,22 +6,22 @@
  * Time: 12:27 PM
  */
 
-require_once("/inc/config.php");
 
 function registerSchool($schoolName,$FName,$LName,$email,$phone){
-    $dbconn = mysqli_connect($dbhost, $dbuser, $dbpass);
+    $dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
         $sql = 'INSERT INTO registeredSchools'.
             '(schoolName,FName,LName,phoneNumber,email)'.
             'VALUES($schoolName,$FName,$LName,$email,$phone)';
-    mysqli_select_db('foodshow2015');
+    mysql_select_db('foodshow2015');
     $retval = mysql_query($sql, $dbconn);
-
+    mysql_close($dbconn);
     if(!$retval){
         return false;
-
     }
-    else {return true;}
-    mysqli_close($dbconn);
+    else {
+        return true;
+    }
+
 }
 
 function returnRegisteredSchools(){
