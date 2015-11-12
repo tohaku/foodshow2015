@@ -71,15 +71,15 @@
     <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="schoolRegistration">
         <?php if($schoolNameError||$FNameError||$LNameError||$emailError == "*"){echo "<p class='formError'>Error: Please recheck your information</p>";}?>
         <label for="schoolName">School Name:</label>
-        <input type="text" value="Enter school name" id="schoolName" class="<?php if($schoolNameError="*"){echo "formError";}?>" name="schoolName"/><span class="formError"><?php echo $schoolNameError;?></span><br>
+        <input type="text" value="Enter school name" id="schoolName" class="<?php if($schoolNameError=="*"){echo "formError";}?>" name="schoolName"/><span class="formError"><?php echo $schoolNameError;?></span><br>
         <label for="FName">First Name:</label>
-        <input type="text" value="First name" id="FName" class="<?php if($FNameError="*"){echo "formError";}?>" name="FName"/><span class="formError"><?php echo $FNameError;?></span><br>
+        <input type="text" value="First name" id="FName" class="<?php if($FNameError=="*"){echo "formError";}?>" name="FName"/><span class="formError"><?php echo $FNameError;?></span><br>
         <label for="LName">Last Name:</label>
-        <input type="text" value="Last name" id="LName" class="<?php if($LNameError="*"){echo "formError";}?>" name="LName"/><span class="formError"><?php echo $LNameError;?></span><br>
+        <input type="text" value="Last name" id="LName" class="<?php if($LNameError=="*"){echo "formError";}?>" name="LName"/><span class="formError"><?php echo $LNameError;?></span><br>
         <label for="phoneNumber">Phone Number:</label>
         <input type="text" value="707-111-2222" id="phoneNumber" name="phoneNumber"/><br>
         <label for="email">Email:</label>
-        <input type="text" value="email@hostname.com" id="email" class="<?php if($emailError="*"){echo "formError";}?>" name="email"/><span class="formError"><?php echo $emailError;?></span><br>
+        <input type="text" value="email@hostname.com" id="email" class="<?php if($emailError=="*"){echo "formError";}?>" name="email"/><span class="formError"><?php echo $emailError;?></span><br>
         <input type="submit" value="Register"/>
     </form>
 </div>
