@@ -51,6 +51,8 @@
             }else{
 
             }
+        }else{
+            $emailError = "*";
         }
 
         $phoneNumber = testInput($_POST["phoneNumber"]);
@@ -67,6 +69,7 @@
 
 <div id="container">
     <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="schoolRegistration">
+        <?php if($schoolNameError||$FNameError||$LNameError||$emailError == "*"){echo "<p class='formError'>Error: Please recheck your information</p>";}?>
         <label for="schoolName">School Name:</label>
         <input type="text" value="Enter school name" id="schoolName" name="schoolName"/><span class="formError"><?php echo $schoolNameError;?></span><br>
         <label for="FName">First Name:</label>

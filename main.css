@@ -93,7 +93,7 @@ label {
     outline: 0;
     background: transparent;
     border-bottom: 2px solid black;
-    box-shadow:inset -4px -5px 4px -4px #D8D8D8;
+    box-shadow:inset -4px -5px 12px -4px #D8D8D8;
     font-size: 20px;
 }
 
