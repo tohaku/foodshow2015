@@ -1,3 +1,4 @@
+<?php require_once("inc/config.php");?>
 <head>
     <title><?php echo $pageTitle; ?></title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
@@ -12,8 +13,6 @@
             });
         });
     </script>
-
-    <?php require("inc/config.php");?>
 </head>
 <body>
 <div class = "header">
