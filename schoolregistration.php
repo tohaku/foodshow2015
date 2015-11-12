@@ -43,10 +43,14 @@
         }
 
         //combined not empty and email verification
-        if(!empty($_POST["email"]) && if(!!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        if(!empty($_POST["email"])){
             $email = testInput($_POST["email"]);
-        }else{
-            $emailError = "*";
+            if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                //filter_var returns false if not an email, returns email string if an email
+                $emailError = "*";
+            }else{
+
+            }
         }
 
         $phoneNumber = testInput($_POST["phoneNumber"]);
