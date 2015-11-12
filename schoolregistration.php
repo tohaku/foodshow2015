@@ -66,7 +66,8 @@
         //post the information if there's no problems
         if(!$formError){
             //test echo
-            echo $schoolName . "<br>" . $FName . "<br>" . $LName . "<br>" . $phoneNumber . "<br>" . $email;
+           // echo $schoolName . "<br>" . $FName . "<br>" . $LName . "<br>" . $phoneNumber . "<br>" . $email;
+            $postedData = registerSchool($schoolName, $FName,$LName,$phoneNumber,$email); //can use return value to handle the page
         }
     }
 
