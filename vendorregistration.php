@@ -7,7 +7,7 @@
 ?>
 
 <?php require("navbar.php");?>
-
+<div id="container">
     <form class="registrationForms" name="vendorRegistration">
         <label for="vendorName">Vendor Name:</label>
         <input type="text" value="Enter vendor name" id="vendorName" name="vendorName"/><br>
@@ -26,6 +26,7 @@
         <label for="boothNumbers">Booth Numbers:</label>
         <div id="boothNumbers">Append booth numbers here, ie 1,22,33</div>
     </form>
+</div>
 
 </body>
 </html>

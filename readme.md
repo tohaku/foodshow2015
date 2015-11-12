@@ -2,7 +2,10 @@
 Food show registration page for both vendors and customers using PHP and using PHP Storm.
 
 ##Change Log
-
+**11/11/2015**
+School Registration Forms Post
+Form Fields Value Check
+CSS QOL Changes, all pages similar layout
 **11/10/2015**
 Added Google fonts
 Added Jquery
