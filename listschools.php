@@ -29,6 +29,10 @@ mysql_close($dbconn);
 <html>
 <head>
 <body>
-<?php echo $row;?>
+<?
+    foreach($row as $printMe){
+        echo $printMe;
+    }
+?>
 </body>
 </html>
