@@ -93,6 +93,7 @@
 ?>
 
 <div id="container">
+    <h3>School Registration</h3>
     <!--need to not echo this form when form is submitted successfully, probly need to pass along success or not success-->
     <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="schoolRegistration">
         <?php if($formError){echo "<p class='formError'>Error: Please recheck your information</p>";}?>

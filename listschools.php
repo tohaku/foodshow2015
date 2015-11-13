@@ -15,4 +15,22 @@ if (!dbconn){
 }
 
 $sql = "SELECT schoolName, FName, LName, phoneNumber, email";
-mysql_select_db(`foodshow2015`);
+mysql_select_db('foodshow2015');
+$retval = mysql_query($sql,$dbconn);
+
+if(!retval){
+    die("Sadly it didn't not connect to the database: ". mysql_error());
+}
+echo "<table>";
+    while($row = mysql_fetch_array($retval, MYSQL_ASSOC))){
+        echo"<tr>".
+            "<td>{$row[`schoolName`]}</td>".
+            "<td>{$row[`FName`]}</td>".
+            "<td>{$row[`LName`]}</td>".
+            "<td>{$row[`phoneNumber`]}</td>".
+            "<td>{$row[`email`]}</td>".
+            "</tr>";
+    }
+echo "</table>";
+
+mysql_close($dbconn);
