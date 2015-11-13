@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<body>
 <?php
 /**
  * Created by PhpStorm.
@@ -25,19 +21,14 @@ $retval = mysql_query($sql,$dbconn);
 if(!retval){
     die("Sadly it didn't not connect to the database: ". mysql_error());
 }
-echo "<table>";
-    while($row = mysql_fetch_array($retval, MYSQL_ASSOC))){
-        echo"<tr>".
-            "<td>{$row[`schoolName`]}</td>".
-            "<td>{$row[`FName`]}</td>".
-            "<td>{$row[`LName`]}</td>".
-            "<td>{$row[`phoneNumber`]}</td>".
-            "<td>{$row[`email`]}</td>".
-            "</tr>";
-    }
-echo "</table>";
+$row = mysql_fetch_array($retval, MYSQL_ASSOC);
 
 mysql_close($dbconn);
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<?php echo $row;?>
 </body>
 </html>

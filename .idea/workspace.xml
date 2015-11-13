@@ -57,22 +57,9 @@
       <file leaf-file-name="listschools.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/listschools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75406873">
-              <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
-              <folding>
-                <marker date="1447373315750" expanded="true" signature="643:664" placeholder="..." />
-                <marker date="1447373315750" expanded="true" signature="643:688" placeholder="..." />
-                <marker date="1447373315750" expanded="true" signature="643:700" placeholder="..." />
-                <marker date="1447373315750" expanded="true" signature="643:703" placeholder="..." />
-                <marker date="1447373315750" expanded="true" signature="643:739" placeholder="..." />
-                <marker date="1447373315750" expanded="true" signature="643:743" placeholder="..." />
-                <marker date="1447373315750" expanded="true" signature="643:779" placeholder="..." />
-                <marker date="1447373315750" expanded="true" signature="643:783" placeholder="..." />
-                <marker date="1447373315750" expanded="true" signature="643:825" placeholder="..." />
-                <marker date="1447373315750" expanded="true" signature="643:829" placeholder="..." />
-                <marker date="1447373315750" expanded="true" signature="643:869" placeholder="..." />
-                <marker date="1447373315750" expanded="true" signature="643:875" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.87703437">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -841,22 +828,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/listschools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75406873">
-          <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
-          <folding>
-            <marker date="1447373315750" expanded="true" signature="643:664" placeholder="..." />
-            <marker date="1447373315750" expanded="true" signature="643:688" placeholder="..." />
-            <marker date="1447373315750" expanded="true" signature="643:700" placeholder="..." />
-            <marker date="1447373315750" expanded="true" signature="643:703" placeholder="..." />
-            <marker date="1447373315750" expanded="true" signature="643:739" placeholder="..." />
-            <marker date="1447373315750" expanded="true" signature="643:743" placeholder="..." />
-            <marker date="1447373315750" expanded="true" signature="643:779" placeholder="..." />
-            <marker date="1447373315750" expanded="true" signature="643:783" placeholder="..." />
-            <marker date="1447373315750" expanded="true" signature="643:825" placeholder="..." />
-            <marker date="1447373315750" expanded="true" signature="643:829" placeholder="..." />
-            <marker date="1447373315750" expanded="true" signature="643:869" placeholder="..." />
-            <marker date="1447373315750" expanded="true" signature="643:875" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.87703437">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
