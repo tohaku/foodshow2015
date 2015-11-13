@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class = "header">
-    <span id="pageTitle"><a href="index.php"><?php echo $pageHeader; ?></a></span>
+    <span id="pageTitle"><a href="index.php"><img src="pics/gsfLogo.png"><?php echo $pageHeader; ?></img></a></span>
     <ul class="nav">
         <li class="<?php if ($section=="info"){echo"selectedPage";}?>"><a href="index.php">Information</a></li>
         <li class="<?php if ($section=="school"){echo"selectedPage";}?>"><a href="schoolregistration.php">School Registration</a></li>

@@ -52,6 +52,11 @@ html {
     font-size:28px;
 }
 
+#pageTitle img {
+    width: 28px;
+    height: 28px;
+}
+
 #pageTitle a {
     text-decoration: none;
     color: #000;
