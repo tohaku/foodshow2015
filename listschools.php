@@ -14,7 +14,7 @@ if (!dbconn){
     die("Couldn't connect to the database". mysql_error());
 }
 
-$sql = "SELECT schoolName, FName, LName, phoneNumber, email";
+$sql = "SELECT schoolName, FName, LName, phoneNumber, email FROM registeredSchools";
 mysql_select_db('foodshow2015');
 $retval = mysql_query($sql,$dbconn);
 

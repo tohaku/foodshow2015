@@ -35,7 +35,7 @@
       <file leaf-file-name="schoolregistration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schoolregistration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.730769">
+            <state vertical-scroll-proportion="-24.538462">
               <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
               <folding>
                 <marker date="1447371857343" expanded="true" signature="2237:2266" placeholder="INSERT INTO ..." />
@@ -57,9 +57,11 @@
       <file leaf-file-name="listschools.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/listschools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.87703437">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-              <folding />
+            <state vertical-scroll-proportion="0.4159132">
+              <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+              <folding>
+                <marker date="1447373536102" expanded="true" signature="301:375" placeholder="SELECT schoo..registeredSchools..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -752,14 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -808,7 +802,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/schoolregistration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.730769">
+        <state vertical-scroll-proportion="-24.538462">
           <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
           <folding>
             <marker date="1447371857343" expanded="true" signature="2237:2266" placeholder="INSERT INTO ..." />
@@ -826,11 +820,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/listschools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87703437">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="0.4159132">
+          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+          <folding>
+            <marker date="1447373536102" expanded="true" signature="301:375" placeholder="SELECT schoo..registeredSchools..." />
+          </folding>
         </state>
       </provider>
     </entry>
