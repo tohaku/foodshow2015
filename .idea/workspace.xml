@@ -57,10 +57,10 @@
       <file leaf-file-name="listschools.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/listschools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75406873">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.6311031">
+              <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
               <folding>
-                <marker date="1447373721228" expanded="true" signature="301:375" placeholder="SELECT schoo..registeredSchools..." />
+                <marker date="1447373912301" expanded="true" signature="338:412" placeholder="SELECT schoo..registeredSchools..." />
               </folding>
             </state>
           </provider>
@@ -830,10 +830,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/listschools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75406873">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.6311031">
+          <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
           <folding>
-            <marker date="1447373721228" expanded="true" signature="301:375" placeholder="SELECT schoo..registeredSchools..." />
+            <marker date="1447373912301" expanded="true" signature="338:412" placeholder="SELECT schoo..registeredSchools..." />
           </folding>
         </state>
       </provider>

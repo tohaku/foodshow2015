@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
 <?php
 /**
  * Created by PhpStorm.
@@ -21,18 +25,12 @@ $retval = mysql_query($sql,$dbconn);
 if(!retval){
     die("Sadly it didn't not connect to the database: ". mysql_error());
 }
-$row = mysql_fetch_array($retval, MYSQL_ASSOC);
+while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
+    echo $row["schoolName"]." ".$row["FName"]." ".$row["LName"];
+}
 
 mysql_close($dbconn);
-?>
-<!DOCTYPE html>
-<html>
-<head>
-<body>
-<?
-    foreach($row as $printMe){
-        echo $printMe;
-    }
+
 ?>
 </body>
 </html>
