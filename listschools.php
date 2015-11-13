@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
 <?php
 /**
  * Created by PhpStorm.
@@ -6,7 +10,7 @@
  * Time: 1:44 PM
  * List all registered schools in the database
  */
-require("inc/config.php");
+include("inc/config.php");
 
 $dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
 
@@ -34,3 +38,6 @@ echo "<table>";
 echo "</table>";
 
 mysql_close($dbconn);
+?>
+</body>
+</html>
