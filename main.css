@@ -135,9 +135,9 @@ label {
 #floorMap {
     width: 820px;
     height: 400px;
-    margin: 0 auto;
+    margin: 40px auto 10px;
     padding: 2px;
-    background-color: #D0D0D0;
+    background-color: #fff;
 }
 
 #boothRow1{
