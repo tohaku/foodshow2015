@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <head>
     <script>
-        $(document).ready(function() {
-            $(".booth").click(function () {
-                alert("booth clicked");
-                alert($(this).attr("id"));
-            });
-        });
+        function registerBooth(){
+            alert("A booth has been clicked");
+        }
     </script>
 </head>
 <body>
@@ -24,25 +21,25 @@ $counter = 1;
 while ($counter<=$totalBooths){
     if($counter<18) {
         if($counter == 1){echo "<div id='boothRow1'>";}
-        echo "<div class='booth' id='booth" . $counter . "'>" . $counter . "</div>";
+        echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth()'>" . $counter . "</div>";
     }
     elseif($counter<35){
         if($counter == 18) {
             echo "</div><div id='boothRow2'>";
         }
-        echo "<div class='booth' id='booth" . $counter . "'>" . $counter . "</div>";
+        echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth()'>" . $counter . "</div>";
     }
     elseif($counter<52){
         if($counter == 35){
             echo "</div><div id='boothRow3'>";
         }
-        echo "<div class='booth' id='booth" . $counter . "'>" . $counter . "</div>";
+        echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth()'>" . $counter . "</div>";
     }
     else {
         if($counter == 52){
             echo "</div><div id='boothRow4'>";
         }
-        echo "<div class='booth' id='booth" . $counter . "'>" . $counter . "</div>";
+        echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth()'>" . $counter . "</div>";
         if($counter == $totalBooths){
             echo "</div>";
         }
