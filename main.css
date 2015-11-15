@@ -133,8 +133,8 @@ label {
 }
 
 #floorMap {
-    width: 670px;
-    height: 500px;
+    width: 800px;
+    height: 400px;
     margin: 0 auto;
     padding: 2px;
     background-color: #D0D0D0;
@@ -142,14 +142,16 @@ label {
 
 #boothRow1{
     margin-top: 35px;
+    margin-left: 35px;
 }
 
 #boothRow2 {
     margin-top: 35px;
+    margin-left: 35px;
 }
 
 #boothRow3 {
-
+    margin-left: 35px;
 }
 
 #boothRow4 {
@@ -161,4 +163,20 @@ label {
     width: 35px;
     height: 35px;
     border: 1px solid #000;
+}
+
+#9 {
+    margin-left: 35px;
+}
+
+#26 {
+    margin-left: 35px;
+}
+
+#43 {
+    margin-left: 35px;
+}
+
+#64 {
+    margin-left: 70px;
 }
