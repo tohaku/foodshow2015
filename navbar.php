@@ -13,6 +13,10 @@
             $("input[type='text']").on("click", function () {
                 $(this).select();
             });
+            <?php if($section=="vendor"){
+                echo 'var boothsArray=[];';
+                }
+            ?>
         });
     </script>
 </head>

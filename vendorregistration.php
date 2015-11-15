@@ -67,10 +67,6 @@
 </div>
 
 <script>
-    $(document).ready(function(){
-        var boothsArray = [];
-    });
-
     function registerBooth(boothID){
         boothsArray.push(boothID);
         alert(boothsArray);
