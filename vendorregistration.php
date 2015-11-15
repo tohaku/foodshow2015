@@ -73,7 +73,7 @@
 
     function registerBooth(boothID){
         boothsArray.push(boothID);
-        $("#boothNumbers").empty().append(boothsArray);
+        $("#boothNumbers").val(boothsArray);
     }
 </script>
 
