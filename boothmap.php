@@ -3,6 +3,7 @@
     <script>
         function registerBooth(){
             alert("A booth has been clicked");
+            alert($(this).attr("id"));
         }
     </script>
 </head>
