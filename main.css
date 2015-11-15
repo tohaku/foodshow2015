@@ -133,11 +133,20 @@ label {
 }
 
 #floorMap {
-    width: 800px;
-    height: 500px;
+    width: 820px;
+    height: 4600px;
     margin: 40px auto 10px;
     padding: 2px;
     background-color: #fff;
+    border: inset 2px #000;
+}
+
+.floormapText {
+    text-align: center;
+}
+
+.floormapText p {
+    font-weight: bold;
 }
 
 #boothRow1{
@@ -166,6 +175,10 @@ label {
     text-align: center;
     font-size: 18px;
     padding: 2px;
+}
+
+.booth:hover {
+    background-color: #BBDEFB;
 }
 
 #booth10 {

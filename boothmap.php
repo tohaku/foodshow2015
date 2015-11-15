@@ -11,7 +11,7 @@
 <?php require("navbar.php");?>
 
 <div id="floorMap">
-    <div><p>Kitchen and Restrooms</p></div>
+    <div class="floormapText"><p>Kitchen and Restrooms</p></div>
 <?php
 $counter = 1;
 while ($counter<=$totalBooths){
@@ -43,6 +43,6 @@ while ($counter<=$totalBooths){
     $counter++;
 }
 ?>
-    <div><p>Entrance</p></div>
+    <div class="floormapText"><p>Entrance</p></div>
 </div>
 </body>
