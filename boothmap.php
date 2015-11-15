@@ -3,9 +3,12 @@
 
 </head>
 <body>
+
 <?php
     $totalBooths = 69;
 ?>
+
+<?php require("navbar.php");?>
 
 <div id="floorMap">
 <?php
