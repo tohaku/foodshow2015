@@ -2,7 +2,8 @@
 <head>
     <script>
         $(".booth").click(function(){
-           alert($(item).attr("id"));
+           alert("booth clicked");
+            alert($(this).attr("id"));
         });
     </script>
 </head>
