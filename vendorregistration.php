@@ -24,8 +24,8 @@
         <!-- for booth numbers, show selected booth numbers in text box but box is un-selectable
             select booth numbers from picture, on click add to array, clear and append to value
         -->
-        <label for="boothNumbers">Booth Numbers:</label>
-        <div id="boothNumbers">Append booth numbers here, ie 1,22,33</div>
+        <label for="boothNumbers">Booths:</label>
+        <input type="text" value="Select booths in the map below" id="boothNumbers" name="boothNumbers"/><br>
     </form>
 </div>
 
@@ -67,9 +67,13 @@
 </div>
 
 <script>
-    function registerBooth(test){
-        alert("A booth has been clicked");
-        alert(test);
+    $(document).ready(function(){
+        var boothsArray = [];
+    });
+
+    function registerBooth(boothID){
+        boothsArray.push(boothID);
+        $("#boothNumbers").empty().append(boothsArray);
     }
 </script>
 
