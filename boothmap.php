@@ -9,7 +9,7 @@
 
 <div id="floorMap">
 <?php
-$counter = 0;
+$counter = 1;
 while ($counter<=$totalBooths){
     if($counter<17) {
         if($counter == 1){echo "<div id='boothRow1'>";}
