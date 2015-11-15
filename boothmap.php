@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <head>
-
+    <script>
+        $(".booth").click(function(){
+           alert($(item).attr("id"));
+        });
+    </script>
 </head>
 <body>
 
