@@ -131,3 +131,29 @@ label {
 .selectedPage {
     border-bottom: solid 2px #0000FF;
 }
+
+#floorMap {
+    width: 600px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+#boothRow2 {
+    margin-top: 34px;
+}
+
+#boothRow3 {
+    margin-top: 51px;
+}
+
+#boothRow4 {
+    margin-top: 84px;
+}
+
+.booth {
+    display: inline;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000;
+}
