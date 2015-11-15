@@ -66,13 +66,5 @@
     <p>Select the booths you would like to register. Booths that are red have already been registered and can't be selected.</p>
 </div>
 
-<script>
-    function registerBooth(boothID){
-        boothsArray.push(boothID);
-        alert(boothsArray);
-       // document.getElementById('boothNumbers').value = boothsArray;
-    }
-</script>
-
 </body>
 </html>

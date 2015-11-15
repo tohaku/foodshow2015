@@ -18,6 +18,11 @@
                 }
             ?>
         });
+        function registerBooth(boothID){
+            boothsArray.push(boothID);
+            alert(boothsArray);
+            // document.getElementById('boothNumbers').value = boothsArray;
+        }
     </script>
 </head>
 <body>
