@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <head>
     <script>
-        $(".booth").click(function(){
-           alert("booth clicked");
-            alert($(this).attr("id"));
+        $(document).ready(function() {
+            $(".booth").click(function () {
+                alert("booth clicked");
+                alert($(this).attr("id"));
+            });
         });
     </script>
 </head>
