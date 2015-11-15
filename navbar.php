@@ -15,7 +15,7 @@
     </script>
 </head>
 <body>
-<div class = "header">
+<div class = "header" style="background-color:<?php if($section=='school'){echo '#4CAF50';}elseif($section=='vendor'){echo '#FFC107';}elseif($section=='directions'){echo '#FF5722';}?>;">
     <span id="pageTitle"><a href="index.php"><img src="pics/gsfLogo.png"><?php echo $pageHeader; ?></img></a></span>
     <ul class="nav">
         <li class="<?php if ($section=="info"){echo"selectedPage";}?>"><a href="index.php">Information</a></li>

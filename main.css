@@ -8,6 +8,7 @@ html {
 }
 
 .header {
+    position: static;
     display: block;
     overflow: hidden;
     height: 60px;

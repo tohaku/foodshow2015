@@ -24,6 +24,7 @@
 
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
+        //need to check if required fields are empty and display error
         if(empty($_POST["schoolName"])){
             $schoolNameError = "*";
             $formError = true;
@@ -65,10 +66,6 @@
 
         //post the information if there's no problems
         if(!$formError){
-            //test echo
-           // echo $schoolName . "<br>" . $FName . "<br>" . $LName . "<br>" . $phoneNumber . "<br>" . $email;
-            //$postedData = registerSchool($schoolName, $FName,$LName,$phoneNumber,$email); //can use return value to handle the page
-           // echo $postedData;
             $dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
             $sql = "INSERT INTO registeredSchools".
                 "(schoolName,FName,LName,phoneNumber,email)".
@@ -80,6 +77,10 @@
                 die('Could not submit data: '.mysql_error());
             }
             mysql_close($dbconn);
+
+            //redirecting to thank you page
+            header('Location: submitted.php');
+            exit();
         }
     }
 
