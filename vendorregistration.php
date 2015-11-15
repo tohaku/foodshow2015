@@ -3,6 +3,7 @@
     $pageTitle = "Vendor Registration";
     $pageHeader = "Goldstar Norcal Food Show 2016";
     $section = "vendor";
+    $totalBooths = "69";
 ?>
 
 <?php require("navbar.php");?>
@@ -27,11 +28,6 @@
         <div id="boothNumbers">Append booth numbers here, ie 1,22,33</div>
     </form>
 </div>
-<?php
-$totalBooths = 69;
-?>
-
-<?php require("navbar.php");?>
 
 <div id="floorMap">
     <div class="floormapText"><p>Kitchen and Restrooms</p></div>
