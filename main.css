@@ -8,7 +8,6 @@ html {
 }
 
 .header {
-    position: static;
     display: block;
     overflow: hidden;
     height: 60px;
@@ -134,11 +133,16 @@ label {
 }
 
 #floorMap {
-    width: 820px;
-    height: 400px;
+    width: 830px;
+    height: 600px;
     margin: 40px auto 10px;
     padding: 2px;
-    background-color: #fff;
+    background-color: #000;
+    background: url(pics/floorplan.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #boothRow1{

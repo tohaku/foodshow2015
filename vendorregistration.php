@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <?php
     $pageTitle = "Vendor Registration";
     $pageHeader = "Goldstar Norcal Food Show 2016";

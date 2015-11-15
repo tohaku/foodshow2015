@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<body>
+<?php require("navbar.php");?>
 <?php
-/**
- * Created by PhpStorm.
- * User: Chris
- * Date: 11/12/2015
- * Time: 1:44 PM
- * List all registered schools in the database
- */
-include("inc/config.php");
-
 $dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
 
 if (!dbconn){

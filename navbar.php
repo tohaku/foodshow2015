@@ -1,4 +1,6 @@
 <?php require_once("inc/config.php");?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title><?php echo $pageTitle; ?></title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
@@ -15,7 +17,7 @@
     </script>
 </head>
 <body>
-<div class = "header" style="background-color:<?php if($section=='school'){echo '#4CAF50';}elseif($section=='vendor'){echo '#FFC107';}elseif($section=='directions'){echo '#FF5722';}?>;">
+<div class = "header" style="background-color:<?php if($section=='school'){echo '#4CAF50';}elseif($section=='vendor'){echo '#B388FF';}elseif($section=='directions'){echo '#FF5722';}?>;">
     <span id="pageTitle"><a href="index.php"><img src="pics/gsfLogo.png"><?php echo $pageHeader; ?></img></a></span>
     <ul class="nav">
         <li class="<?php if ($section=="info"){echo"selectedPage";}?>"><a href="index.php">Information</a></li>

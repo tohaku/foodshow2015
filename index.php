@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php
     $pageTitle = "Food Show 2015";
     $pageHeader = "Goldstar Norcal Food Show 2016";
