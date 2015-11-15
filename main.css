@@ -138,7 +138,7 @@ label {
     margin: 40px auto 10px;
     padding: 2px;
     background-color: #000;
-    background: url(pics/floorplan.png) no-repeat center center fixed;
+    background: url(pics/floorplan.png) no-repeat center center;
     background-size: 100% 100%;
 }
 
