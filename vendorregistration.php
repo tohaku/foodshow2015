@@ -73,7 +73,8 @@
 
     function registerBooth(boothID){
         boothsArray.push(boothID);
-        $("#boothNumbers").val(boothsArray);
+        alert(boothsArray);
+        document.getElementById('boothNumbers').value = boothsArray;
     }
 </script>
 
