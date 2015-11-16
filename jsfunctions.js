@@ -7,7 +7,7 @@ function duplicatedCheck(value , array){
     if(array.length==0){
         array.push(value);
     }else {
-        for (i = 0; i < array.length; i++) {
+        for (i = 0; i <= array.length; i++) {
             //if it already exists we're deselecting that booth
             if (value == array[i]) {
                 array.splice(i, 1);
