@@ -7,25 +7,119 @@
 ?>
 
 <?php require("navbar.php");?>
+
+<?php
+$vendorName = "Enter vendor name";
+$FName = "First name";
+$LName = "Last name";
+$phoneNumber = "707-111-2222";
+$email = "email@hostname.com";
+$boothNumbers = "Select booths in the map below";
+//errors for required fields or validation
+$formError = false;
+$vendorNameError = "";
+$FNameError = "";
+$LNameError = "";
+$phoneNumberError = "";
+$emailError = "";
+$boothError = "";
+
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    //need to check if required fields are empty and display error
+    if(empty($_POST["vendorName"])){
+        $vendorNameError = "*";
+        $formError = true;
+    }else {
+        $schoolName = testInput($_POST["schoolName"]);
+    }
+
+    if(empty($_POST["FName"])){
+        $FNameError = "*";
+        $formError = true;
+    }else {
+        $FName = testInput($_POST["FName"]);
+    }
+
+    if(empty($_POST["LName"])){
+        $LNameError = "*";
+        $formError = true;
+    }else {
+        $LName = testInput($_POST["LName"]);
+    }
+
+    //combined not empty and email verification
+    if(!empty($_POST["email"])){
+        $email = testInput($_POST["email"]);
+        if(filter_var($email, FILTER_VALIDATE_EMAIL) == false){
+            //filter_var returns false if not an email, returns email string if an email
+            $emailError = "*";
+            $formError = true;
+        }else{
+            //good job
+        }
+    }else{
+        $emailError = "*";
+        $formError = true;
+    }
+
+    if(empty($_POST["boothNumbers"])){
+        $boothError = "*";
+        $formError = true;
+    }else {
+        $boothNumbers = $_Post["boothNumbers"];
+    }
+
+
+    //need to add phone number verification function
+    $phoneNumber = testInput($_POST["phoneNumber"]);
+
+    //post the information if there's no problems
+    /*
+    if(!$formError){
+        $dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
+        $sql = "INSERT INTO registeredSchools".
+            "(schoolName,FName,LName,phoneNumber,email)".
+            "VALUES('$schoolName','$FName','$LName','$phoneNumber','$email')";
+        mysql_select_db('foodshow2015');
+        $retval = mysql_query($sql, $dbconn);
+
+        if(!$retval){
+            die('Could not submit data: '.mysql_error());
+        }
+        mysql_close($dbconn);
+
+        //redirecting to thank you page
+        header('Location: submitted.php');
+        exit();
+    }*/
+}
+
+//SQL injection prevention, normalize data
+function testInput($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+?>
+
 <div id="container">
     <h3>Vendor Registration</h3>
-    <form class="registrationForms" name="vendorRegistration">
+    <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="vendorRegistration">
+        <?php if($formError){echo "<p class='formError'>Error: Please recheck your information</p>";}?>
         <label for="vendorName">Vendor Name:</label>
-        <input type="text" value="Enter vendor name" id="vendorName" name="vendorName"/><br>
+        <input type="text" value="<?php echo $vendorName;?>" id="vendorName" class="<?php if($vendorNameError=="*"){echo "formError";}?>" name="vendorName"/><span class="formError"><?php echo $vendorNameError;?></span><br>
         <label for="FName">First Name:</label>
-        <input type="text" value="First name" id="FName" name="FName"/><br>
+        <input type="text" value="<?php echo $FName;?>" id="FName" class="<?php if($FNameError=="*"){echo "formError";}?>" name="FName"/><span class="formError"><?php echo $FNameError;?></span><br>
         <label for="LName">Last Name:</label>
-        <input type="text" value="Last name" id="LName" name="LName"/><br>
+        <input type="text" value="<?php echo $LName;?>" id="LName" class="<?php if($LNameError=="*"){echo "formError";}?>" name="LName"/><span class="formError"><?php echo $LNameError;?></span><br>
         <label for="phoneNumber">Phone Number:</label>
-        <input type="text" value="707-111-2222" id="phoneNumber" name="phoneNumber"/><br>
+        <input type="text" value="<?php echo $phoneNumber;?>" id="phoneNumber" class="<?php if($phoneNumberError=="*"){echo "formError";}?>" name="phoneNumber"/><span class="formError"><?php echo $phoneNumberError;?></span><br>
         <label for="email">Email:</label>
-        <input type="text" value="example@hostname.com" id="email" name="email"/><br>
-
-        <!-- for booth numbers, show selected booth numbers in text box but box is un-selectable
-            select booth numbers from picture, on click add to array, clear and append to value
-        -->
+        <input type="text" value="<?php echo $email;?>" id="email" class="<?php if($emailError=="*"){echo "formError";}?>" name="email"/><span class="formError"><?php echo $emailError;?></span><br>
         <label for="boothNumbers">Booths:</label>
-        <input type="text" value="Select booths in the map below" id="boothNumbers" name="boothNumbers"/><br>
+        <input type="text" value="Select booths in the map below" id="boothNumbers" class="<?php if($boothError=="*"){echo "formError";}?>" name="boothNumbers"/><span class="formError"><?php echo $boothError;?></span><br>
     </form>
 </div>
 
