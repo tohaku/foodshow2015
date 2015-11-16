@@ -18,6 +18,7 @@
         });
         function registerBooth(boothID){
             boothsArray=duplicatedCheck(boothID,boothsArray);
+            alert(boothsArray);
             //boothsArray.push(boothID);
             //var joinedArray = boothsArray.join(" "); //special characters are screwing me up
             document.getElementById('boothNumbers').value = boothsArray.join(" ");
