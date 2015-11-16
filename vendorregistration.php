@@ -66,9 +66,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $boothNumbers = testInput($_Post["boothNumbers"]);
     }
 
-    //need to add phone number verification function
-    $phoneNumber = testInput($_POST["phoneNumber"]);
-
+    if(empty($_POST["phoneNumber"])){
+        $phoneNumberError = "*";
+        $formError = true;
+    }else {
+        $phoneNumber = testInput($_POST["phoneNumber"]);
+    }
     //post the information if there's no problems
     /*
     if(!$formError){

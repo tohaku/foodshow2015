@@ -2,6 +2,9 @@
 Food show registration page for both vendors and customers using PHP and using PHP Storm.
 
 ##Change Log
+**11/15/2015**
+
+
 **11/14/2015**
 *Floormap booths and CSS done
 *CSS QOL changes after feedback
