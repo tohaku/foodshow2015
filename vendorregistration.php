@@ -120,6 +120,7 @@ function testInput($data){
         <input type="text" value="<?php echo $email;?>" id="email" class="<?php if($emailError=="*"){echo "formError";}?>" name="email"/><span class="formError"><?php echo $emailError;?></span><br>
         <label for="boothNumbers">Booths:</label>
         <input type="text" value="Select booths in the map below" id="boothNumbers" class="<?php if($boothError=="*"){echo "formError";}?>" name="boothNumbers"/><span class="formError"><?php echo $boothError;?></span><br>
+        <input type="submit" value="Register"/>
     </form>
 </div>
 
