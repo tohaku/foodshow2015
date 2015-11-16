@@ -63,7 +63,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $boothError = "*";
         $formError = true;
     }else {
-        //$boothNumbers = testInput($_Post["boothNumbers"]);
+        $boothNumbers = $_Post["boothNumbers"];
     }
 
     if(empty($_POST["phoneNumber"])){
