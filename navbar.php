@@ -19,7 +19,11 @@
         function registerBooth(boothID){
             var daleks = duplicatedCheck(boothID , boothsArray);
             if(daleks){
-                boothsArray.splice(daleks,1);
+                if(daleks===0){boothsArray.shift()}
+                //elseif(daleks===boothsArray.length-1){boothsArray.pop()}
+                else{
+                    boothsArray.splice(daleks, 1);
+                }
                 document.getElementById(boothID).style.backgroundColor = '#fff';
             }
             else{
