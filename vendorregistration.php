@@ -112,6 +112,7 @@ function testInput($data){
             echo $key." : ".$entry."<br>";
         }
     }
+echo ($_POST["boothNumbers"]);
 
 ?>
 <div id="container">
