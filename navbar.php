@@ -17,7 +17,8 @@
             });
         });
         function registerBooth(boothID){
-            boothsArray=duplicatedCheck(boothID,boothsArray);
+            if(boothsArray.length===0){boothsArray.push(boothID);}
+            else{boothsArray=duplicatedCheck(boothID,boothsArray);}
             alert(boothsArray);
             //boothsArray.push(boothID);
             //var joinedArray = boothsArray.join(" "); //special characters are screwing me up
