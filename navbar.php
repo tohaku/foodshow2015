@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="jsfunctions.js"></script>
     <script>
-        var boothsArray = [placeHolder];
+        var boothsArray = ["placeHolder"];
         $(document).ready(function(){
             $("input[type='text']").on("click", function () {
                 $(this).select();
