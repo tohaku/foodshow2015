@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="jsfunctions.js"></script>
     <script>
-        var boothsArray = [];
+        var boothsArray = [placeHolder];
         $(document).ready(function(){
             $("input[type='text']").on("click", function () {
                 $(this).select();
@@ -30,10 +30,10 @@
                 boothsArray.push(boothID);
                 document.getElementById(boothID).style.backgroundColor = '#84FFFF';
             }
-            alert(boothsArray);
-            //boothsArray.push(boothID);
-            //var joinedArray = boothsArray.join(" "); //special characters are screwing me up
-            document.getElementById('boothNumbers').value = boothsArray.join(" ");
+            //issue with first value in array being duplicated and not removed
+            //using workaround to ignore 0 index in boothsArray
+            var tempProblemSolver = boothsArray.splice(1,1);
+            document.getElementById('boothNumbers').value = tempProblemSolver.join(" ");
         }
 
     </script>
