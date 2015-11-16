@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link href="main.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="jsfunctions.js"></script>
     <script>
         var boothsArray = [];
         $(document).ready(function(){
@@ -16,10 +17,11 @@
             });
         });
         function registerBooth(boothID){
-            boothsArray.push(boothID);
+            boothsArray=duplicatedCheck(boothID,boothsArray);
+            //boothsArray.push(boothID);
             //var joinedArray = boothsArray.join(" "); //special characters are screwing me up
             document.getElementById('boothNumbers').value = boothsArray.join(" ");
-            document.getElementById(boothID).style.backgroundColor = '#84FFFF';
+            //document.getElementById(boothID).style.backgroundColor = '#84FFFF';
         }
 
     </script>
