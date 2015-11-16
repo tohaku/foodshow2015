@@ -17,6 +17,7 @@ function duplicatedCheck(value , array){
             //it's a new booth, adding it to the array
             array.push(value);
             console.log("value pushed");
+            i = array.length;
         }
     }
     console.log(array);
