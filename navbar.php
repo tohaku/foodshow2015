@@ -11,7 +11,6 @@
     <script>
         var boothsArray = [];
         $(document).ready(function(){
-
             $("input[type='text']").on("click", function () {
                 $(this).select();
             });
@@ -20,6 +19,7 @@
             boothsArray.push(boothID);
             //alert(boothsArray.join("\n"));
             document.getElementById('boothNumbers').value = boothsArray;
+            document.getElementByID(boothID).style.backgroundColor = '#84FFFF';
         }
 
     </script>
