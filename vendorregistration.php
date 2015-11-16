@@ -49,27 +49,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
     //combined not empty and email verification
-    if(!empty($_POST["email"])){
-        $email = testInput($_POST["email"]);
-        if(filter_var($email, FILTER_VALIDATE_EMAIL) == false){
-            //filter_var returns false if not an email, returns email string if an email
-            $emailError = "*";
-            $formError = true;
-        }else{
-            //good job
-        }
-    }else{
+    if(empty($_POST["email"])) {
         $emailError = "*";
         $formError = true;
+    }elseif(filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
+        $emailError = "*";
+        $formError = true;
+    }else{
+        $email = testInput($_POST["email"]);
     }
 
     if(empty($_POST["boothNumbers"])){
         $boothError = "*";
         $formError = true;
     }else {
-        $boothNumbers = $_Post["boothNumbers"];
+        $boothNumbers = testInput($_Post["boothNumbers"]);
     }
-
 
     //need to add phone number verification function
     $phoneNumber = testInput($_POST["phoneNumber"]);
@@ -119,7 +114,7 @@ function testInput($data){
         <label for="email">Email:</label>
         <input type="text" value="<?php echo $email;?>" id="email" class="<?php if($emailError=="*"){echo "formError";}?>" name="email"/><span class="formError"><?php echo $emailError;?></span><br>
         <label for="boothNumbers">Booths:</label>
-        <input type="text" value="Select booths in the map below" id="boothNumbers" class="<?php if($boothError=="*"){echo "formError";}?>" name="boothNumbers"/><span class="formError"><?php echo $boothError;?></span><br>
+        <input type="text" value="<?php echo $boothNumbers;?>" id="boothNumbers" class="<?php if($boothError=="*"){echo "formError";}?>" name="boothNumbers"/><span class="formError"><?php echo $boothError;?></span><br>
         <input type="submit" value="Register"/>
     </form>
 </div>
