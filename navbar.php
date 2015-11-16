@@ -17,10 +17,9 @@
             });
         });
         function registerBooth(boothID){
-            alert("boothID");
             boothsArray.push(boothID);
-            alert(boothsArray.join("\n"));
-            // document.getElementById('boothNumbers').value = boothsArray;
+            //alert(boothsArray.join("\n"));
+            document.getElementById('boothNumbers').value = boothsArray;
         }
 
     </script>
