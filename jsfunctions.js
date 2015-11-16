@@ -8,6 +8,7 @@ function duplicatedCheck(value , array){
         //if it already exists we're deselecting that booth
         console.log(i);
         if (value === array[i]) {
+            console.log(value +" "+array[i]);
             array.splice(i, 1);
             console.log("value spliced");
             i = array.length;//may as well end the loop we found it
