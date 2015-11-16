@@ -9,18 +9,20 @@
     <link href="main.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+        var boothsArray = [];
         $(document).ready(function(){
-            var boothsArray = [];
+
             $("input[type='text']").on("click", function () {
                 $(this).select();
             });
-            function registerBooth(boothID){
-                alert("boothID");
-                boothsArray.push(boothID);
-                alert(boothsArray.join("\n"));
-                // document.getElementById('boothNumbers').value = boothsArray;
-            }
         });
+        function registerBooth(boothID){
+            alert("boothID");
+            boothsArray.push(boothID);
+            alert(boothsArray.join("\n"));
+            // document.getElementById('boothNumbers').value = boothsArray;
+        }
+
     </script>
 </head>
 <body>
