@@ -101,7 +101,19 @@ function testInput($data){
     return $data;
 }
 ?>
-<?php echo $_POST;?>
+<?php
+    //testing
+    foreach($_POST as $key => $entry){
+        if (isArray($entry)){
+            foreach($entry as $value){
+                print $key." : ".$value."<br>";
+            }
+        }else{
+            print $key." : ".$entry."<br>";
+        }
+    }
+
+?>
 <div id="container">
     <h3>Vendor Registration</h3>
     <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="vendorRegistration">
