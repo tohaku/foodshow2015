@@ -104,12 +104,12 @@ function testInput($data){
 <?php
     //testing
     foreach($_POST as $key => $entry){
-        if (isArray($entry)){
+        if (is_Array($entry)){
             foreach($entry as $value){
-                print $key." : ".$value."<br>";
+                echo $key." : ".$value."<br>";
             }
         }else{
-            print $key." : ".$entry."<br>";
+            echo $key." : ".$entry."<br>";
         }
     }
 
