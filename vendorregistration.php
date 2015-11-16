@@ -62,14 +62,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($_POST["boothNumbers"])){
         $boothError = "*";
         $formError = true;
-    }else {
+    }else{
         $boothNumbers = $_Post["boothNumbers"];
     }
 
     if(empty($_POST["phoneNumber"])){
         $phoneNumberError = "*";
         $formError = true;
-    }else {
+    }else{
         $phoneNumber = testInput($_POST["phoneNumber"]);
     }
     //post the information if there's no problems
