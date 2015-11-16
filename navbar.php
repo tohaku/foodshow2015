@@ -19,7 +19,7 @@
             boothsArray.push(boothID);
             //alert(boothsArray.join("\n"));
             document.getElementById('boothNumbers').value = boothsArray;
-            document.getElementByID(boothID).style.backgroundColor = '#84FFFF';
+            document.getElementById(boothID).style.backgroundColor = '#84FFFF';
         }
 
     </script>
