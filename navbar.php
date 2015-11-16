@@ -32,7 +32,7 @@
             }
             //issue with first value in array being duplicated and not removed
             //using workaround to ignore 0 index in boothsArray
-            var tempProblemSolver = boothsArray.slice(0,1);
+            var tempProblemSolver = boothsArray.slice(1,boothsArray.lenth+1);
             document.getElementById('boothNumbers').value = tempProblemSolver.join(" ");
         }
 
