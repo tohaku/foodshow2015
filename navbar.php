@@ -17,8 +17,8 @@
         });
         function registerBooth(boothID){
             boothsArray.push(boothID);
-            //alert(boothsArray.join("\n"));
-            document.getElementById('boothNumbers').value = boothsArray;
+            //var joinedArray = boothsArray.join(" "); //special characters are screwing me up
+            document.getElementById('boothNumbers').value = boothsArray.join(" ");
             document.getElementById(boothID).style.backgroundColor = '#84FFFF';
         }
 
