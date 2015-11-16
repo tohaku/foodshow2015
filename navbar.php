@@ -17,17 +17,14 @@
             });
         });
         function registerBooth(boothID){
-            if(boothsArray.length===0){boothsArray.push(boothID);}
+            var daleks = duplicatedCheck(boothID , boothsArray);
+            if(daleks){
+                boothsArray.splice(daleks,1);
+                document.getElementById(boothID).style.backgroundColor = '#fff';
+            }
             else{
-                var daleks = duplicatedCheck(boothID , boothsArray);
-                if(daleks){
-                    boothsArray.splice(daleks,1);
-                    document.getElementById(boothID).style.backgroundColor = '#fff';
-                }
-                else{
-                    boothsArray.push(boothID);
-                    document.getElementById(boothID).style.backgroundColor = '#84FFFF';
-                }
+                boothsArray.push(boothID);
+                document.getElementById(boothID).style.backgroundColor = '#84FFFF';
             }
             alert(boothsArray);
             //boothsArray.push(boothID);
