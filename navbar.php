@@ -10,20 +10,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
+            var boothsArray = [];
             $("input[type='text']").on("click", function () {
                 $(this).select();
             });
-            <?php if($section=="vendor"){
-                echo 'var boothsArray=[];';
-                }
-            ?>
             function registerBooth(boothID){
                 boothsArray.push(boothID);
                 alert(boothsArray);
                 // document.getElementById('boothNumbers').value = boothsArray;
             }
         });
-
     </script>
 </head>
 <body>
