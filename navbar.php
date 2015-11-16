@@ -18,12 +18,21 @@
         });
         function registerBooth(boothID){
             if(boothsArray.length===0){boothsArray.push(boothID);}
-            else{boothsArray=duplicatedCheck(boothID,boothsArray);}
+            else{
+                var daleks = duplicatedCheck(boothID , boothsArray);
+                if(daleks){
+                    boothsArray.splice(daleks,1);
+                    document.getElementById(boothID).style.backgroundColor = '#fff';
+                }
+                else{
+                    boothsArray.push(boothID);
+                    document.getElementById(boothID).style.backgroundColor = '#84FFFF';
+                }
+            }
             alert(boothsArray);
             //boothsArray.push(boothID);
             //var joinedArray = boothsArray.join(" "); //special characters are screwing me up
             document.getElementById('boothNumbers').value = boothsArray.join(" ");
-            //document.getElementById(boothID).style.backgroundColor = '#84FFFF';
         }
 
     </script>
