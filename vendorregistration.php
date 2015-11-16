@@ -129,7 +129,7 @@ function testInput($data){
         <label for="email">Email:</label>
         <input type="text" value="<?php echo $email;?>" id="email" class="<?php if($emailError=="*"){echo "formError";}?>" name="email"/><span class="formError"><?php echo $emailError;?></span><br>
         <label for="boothNumbers">Booths:</label>
-        <input type="text" value="<?php echo $boothNumbers?>" id="boothNumbers" class="<?php if($boothError=="*"){echo "formError";}?>" name="boothNumbers"/><span class="formError"><?php echo $boothError;?></span><br>
+        <input type="text" value="<?php echo $boothNumbers;?>" id="boothNumbers" class="<?php if($boothError=="*"){echo "formError";}?>" name="boothNumbers"/><span class="formError"><?php echo $boothError;?></span><br>
         <input type="submit" value="Register"/>
     </form>
 </div>
