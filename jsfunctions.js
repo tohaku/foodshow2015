@@ -4,6 +4,7 @@
 
 function duplicatedCheck(value , array){
     for (var i = 0; i < array.length; i++) {
+        console.log(array[i]+" "+i);
         if (value === array[i]) {
             return i;
         }
