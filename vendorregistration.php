@@ -63,7 +63,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $boothError = "*";
         $formError = true;
     }else {
-        $boothNumbers = $_Post["boothNumbers"];
+        $boothNumbers = testInput($_Post["boothNumbers"]);
     }
 
     //need to add phone number verification function
