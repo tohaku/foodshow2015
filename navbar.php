@@ -15,8 +15,9 @@
                 $(this).select();
             });
             function registerBooth(boothID){
+                alert("boothID");
                 boothsArray.push(boothID);
-                alert(boothsArray);
+                alert(boothsArray.join("\n"));
                 // document.getElementById('boothNumbers').value = boothsArray;
             }
         });
