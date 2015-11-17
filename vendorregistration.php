@@ -57,12 +57,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $emailError = "*";
         $email ="Please enter email";
         $formError = true;
-    }elseif(filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
-        $emailError = "*";
-        $email ="invalid email entered";
-        $formError = true;
     }else{
-        $email = testInput($_POST["email"]);
+        $email=$_POST["email"];
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+        if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+            $emailError = "*";
+            $email ="invalid email entered";
+            $formError = true;
+        }else{
+            $email = testInput($_POST["email"]);
+        }
     }
 
     if(empty($_POST["boothNumbers"])){
