@@ -91,11 +91,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $sql = "INSERT INTO vendorRegistration".
             "(vendorName,FName,LName,phoneNumber,email,boothNumbers)".
             "VALUES('$vendorName','$FName','$LName','$phoneNumber','$email','$boothNumbers')";
+        $sql2 = "INSERT INTO registeredBooths".
+            "(booths)".
+            "VALUES('$boothNumbers')";
         mysql_select_db('foodshow2015');
         $retval = mysql_query($sql, $dbconn);
+        $retval2 = mysql_query($sql2,$dbconn);
 
         if(!$retval){
-            die('Could not submit data: '.mysql_error());
+            die('Could not submit vendors: '.mysql_error());
+        }
+        if(!$retval2){
+            die('Could not submit booths: '.mysql_error());
         }
         mysql_close($dbconn);
 
