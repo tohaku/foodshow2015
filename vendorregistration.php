@@ -121,11 +121,12 @@ function testInput($data){
     return $data;
 }
 ?>
-<?php
+
+<div id="container">
+    <?php
     echo $boothNumbersTest;
     echo $boothNumbers;
-?>
-<div id="container">
+    ?>
     <h3>Vendor Registration</h3>
     <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="vendorRegistration">
         <?php if($formError){echo "<p class='formError'>Error: Please recheck your information</p>";}?>
