@@ -41,9 +41,6 @@ html {
     font-weight: bold;
 }
 
-.nav li:active {
-    text-shadow: #faf5f5 2px 2px 0px;
-}
 
 #pageTitle {
     display: inline-block;
