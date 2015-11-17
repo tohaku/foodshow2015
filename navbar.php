@@ -41,7 +41,7 @@
 </head>
 <body>
 <div class = "header" style="background-color:<?php if($section=='school'){echo '#B39DDB';}elseif($section=='vendor'){echo '#00BFA5';}elseif($section=='directions'){echo '#FFCC80';}?>;">
-    <span id="pageTitle"><a href="index.php"><img src="pics/gsfLogo.png">Slic COOP Food Show 2016 </img></a></span>
+    <span id="pageTitle"><a href="index.php"><img src="pics/gsfLogo.png">Slic COOP Food Show 2016 </img></a><span id="broughtToYou">testing</span></span>
     <ul class="nav">
         <li class="<?php if ($section=="info"){echo"selectedPage";}?>"><a href="index.php">Information</a></li>
         <li class="<?php if ($section=="school"){echo"selectedPage";}?>"><a href="schoolregistration.php">School Registration</a></li>
