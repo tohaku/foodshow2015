@@ -108,7 +108,7 @@
     </form>
     <?php
         if($FName=="panda"){
-            echo "<img src='http://orig03.deviantart.net/9e04/f/2013/305/3/c/placeholder_character_animation4_by_linzu-d6seolp.gif' style='height:42px;width:60px;float:right;clear: right;'>";
+            echo "<img src='http://orig03.deviantart.net/9e04/f/2013/305/3/c/placeholder_character_animation4_by_linzu-d6seolp.gif' style='height:80px;width:100px;float:right;clear: right;'>";
         }
     ?>
 </div>
