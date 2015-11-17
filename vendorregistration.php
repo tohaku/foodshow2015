@@ -76,7 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $formError = true;
     }else{
         $boothNumbersTest = $_Post["boothNumbers"];
-        $boothNumbers = implode(',', $boothNumbersTest);
+        $boothNumbers = implode(',', $_Post["boothNumbers"]);
         //this part not really working atm, just echoing blank
     }
 
