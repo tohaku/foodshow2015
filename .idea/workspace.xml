@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schoolregistration.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="schoolregistration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schoolregistration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3873874">
+            <state vertical-scroll-proportion="-19.384615">
               <caret line="91" column="198" selection-start-line="91" selection-start-column="198" selection-end-line="91" selection-end-column="198" />
               <folding>
                 <marker date="1447734642120" expanded="true" signature="1860:2044" placeholder="INSERT INTO ..." />
@@ -46,13 +46,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vendorregistration.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="vendorregistration.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendorregistration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-39.884617">
-              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.55135137">
+              <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
               <folding>
-                <marker date="1447732058104" expanded="true" signature="2098:2264" placeholder="INSERT INTO ..." />
+                <marker date="1447735513697" expanded="true" signature="2091:2287" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -166,10 +166,10 @@
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/.idea/jsfunctions.js" />
         <option value="$PROJECT_DIR$/jsfunctions.js" />
-        <option value="$PROJECT_DIR$/vendorregistration.php" />
         <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/schoolregistration.php" />
+        <option value="$PROJECT_DIR$/vendorregistration.php" />
       </list>
     </option>
   </component>
@@ -385,7 +385,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <marker date="1447732058104" expanded="true" signature="2098:2264" placeholder="INSERT INTO ..." />
+            <marker date="1447735513697" expanded="true" signature="2091:2287" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -462,7 +462,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="26" />
           <folding>
-            <marker date="1447732058104" expanded="true" signature="2098:2264" placeholder="INSERT INTO ..." />
+            <marker date="1447735513697" expanded="true" signature="2091:2287" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -539,7 +539,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="85" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
           <folding>
-            <marker date="1447732058104" expanded="true" signature="2098:2264" placeholder="INSERT INTO ..." />
+            <marker date="1447735513697" expanded="true" signature="2091:2287" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -725,16 +725,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendorregistration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-39.884617">
-          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
-          <folding>
-            <marker date="1447732058104" expanded="true" signature="2098:2264" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.576923">
@@ -755,12 +745,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/schoolregistration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3873874">
+        <state vertical-scroll-proportion="-19.384615">
           <caret line="91" column="198" selection-start-line="91" selection-start-column="198" selection-end-line="91" selection-end-column="198" />
           <folding>
             <marker date="1447734642120" expanded="true" signature="1860:2044" placeholder="INSERT INTO ..." />
             <marker date="1447734642120" expanded="true" signature="4654:4703" placeholder="..." />
             <marker date="1447734642120" expanded="true" signature="4707:4723" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendorregistration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55135137">
+          <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
+          <folding>
+            <marker date="1447735513697" expanded="true" signature="2091:2287" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

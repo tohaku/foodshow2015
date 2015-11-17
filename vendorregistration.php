@@ -75,12 +75,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $phoneNumber = testInput($_POST["phoneNumber"]);
     }
     //post the information if there's no problems
-    /*
     if(!$formError){
         $dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
-        $sql = "INSERT INTO registeredSchools".
-            "(schoolName,FName,LName,phoneNumber,email)".
-            "VALUES('$schoolName','$FName','$LName','$phoneNumber','$email')";
+        $sql = "INSERT INTO vendorRegistration".
+            "(vendorName,FName,LName,phoneNumber,email,boothNumbers)".
+            "VALUES('$vendorName','$FName','$LName','$phoneNumber','$email','$boothNumbers')";
         mysql_select_db('foodshow2015');
         $retval = mysql_query($sql, $dbconn);
 
@@ -92,7 +91,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         //redirecting to thank you page
         header('Location: submitted.php');
         exit();
-    }*/
+    }
 }
 
 //SQL injection prevention, normalize data
@@ -102,18 +101,6 @@ function testInput($data){
     $data = htmlspecialchars($data);
     return $data;
 }
-?>
-<?php
-    //testing
-    foreach($_POST as $key => $entry){
-        if (is_Array($entry)){
-            foreach($entry as $value){
-                echo $key." : ".$value."<br>";
-            }
-        }else{
-            echo $key." : ".$entry."<br>";
-        }
-    }
 ?>
 <div id="container">
     <h3>Vendor Registration</h3>
