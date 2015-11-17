@@ -89,7 +89,7 @@
     }
 ?>
 
-<div id="container" <?php if($FName=="panda"){echo "style='background: url(http://theartmad.com/wp-content/uploads/2015/04/Forest-Clipart-7.png) no-repeat center bottom fixed;'";}?>>
+<div id="container" <?php if($FName=="panda"){echo "style='background-color: #fff;background: url(http://theartmad.com/wp-content/uploads/2015/04/Forest-Clipart-7.png) no-repeat center bottom fixed;'";}?>>
     <h3>School Registration</h3>
     <!--need to not echo this form when form is submitted successfully, probly need to pass along success or not success-->
     <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="schoolRegistration">
