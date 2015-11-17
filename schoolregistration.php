@@ -59,22 +59,24 @@
         $phoneNumber = testInput($_POST["phoneNumber"]);
 
         //post the information if there's no problems
-        if(!$formError){
-            $dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
-            $sql = "INSERT INTO registeredSchools".
-                "(schoolName,FName,LName,phoneNumber,email)".
-                "VALUES('$schoolName','$FName','$LName','$phoneNumber','$email')";
-            mysql_select_db('foodshow2015');
-            $retval = mysql_query($sql, $dbconn);
+        if($_POST["FName"]!="panda") {
+            if (!$formError) {
+                $dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
+                $sql = "INSERT INTO registeredSchools" .
+                    "(schoolName,FName,LName,phoneNumber,email)" .
+                    "VALUES('$schoolName','$FName','$LName','$phoneNumber','$email')";
+                mysql_select_db('foodshow2015');
+                $retval = mysql_query($sql, $dbconn);
 
-            if(!$retval){
-                die('Could not submit data: '.mysql_error());
+                if (!$retval) {
+                    die('Could not submit data: ' . mysql_error());
+                }
+                mysql_close($dbconn);
+
+                //redirecting to thank you page
+                header('Location: submitted.php');
+                exit();
             }
-            mysql_close($dbconn);
-
-            //redirecting to thank you page
-            header('Location: submitted.php');
-            exit();
         }
     }
 
@@ -104,6 +106,11 @@
         <input type="text" value="<?php echo $email;?>" id="email" class="<?php if($emailError=="*"){echo "formError";}?>" name="email"/><span class="formError"><?php echo $emailError;?></span><br>
         <input type="submit" value="Register"/>
     </form>
+    <?php
+        if($_POST["FName"]=="panda"){
+            echo "<img src='http://orig03.deviantart.net/9e04/f/2013/305/3/c/placeholder_character_animation4_by_linzu-d6seolp.gif' style='height:42px;width:60px;float:right;clear: right;'>";
+        }
+    ?>
 </div>
 
 </body>
