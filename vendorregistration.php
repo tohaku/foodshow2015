@@ -125,17 +125,17 @@ function testInput($data){
     <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="vendorRegistration">
         <?php if($formError){echo "<p class='formError'>Error: Please recheck your information</p>";}?>
         <label for="vendorName">Vendor Name:</label>
-        <input type="text" value="<?php echo $vendorName;?>" id="vendorName" class="<?php if($vendorNameError=="*"){echo "formError";}?>" name="vendorName"/><span class="formError"><?php echo $vendorNameError;?></span><br>
+        <input type="text" value="<?php echo $vendorName;?>" id="vendorName" class="<?php if($vendorNameError==='*'){echo 'formError';}?>" name="vendorName"/><span class="formError"><?php echo $vendorNameError;?></span><br>
         <label for="FName">First Name:</label>
-        <input type="text" value="<?php echo $FName;?>" id="FName" class="<?php if($FNameError=="*"){echo "formError";}?>" name="FName"/><span class="formError"><?php echo $FNameError;?></span><br>
+        <input type="text" value="<?php echo $FName;?>" id="FName" class="<?php if($FNameError==='*'){echo 'formError';}?>" name="FName"/><span class="formError"><?php echo $FNameError;?></span><br>
         <label for="LName">Last Name:</label>
-        <input type="text" value="<?php echo $LName;?>" id="LName" class="<?php if($LNameError=="*"){echo "formError";}?>" name="LName"/><span class="formError"><?php echo $LNameError;?></span><br>
+        <input type="text" value="<?php echo $LName;?>" id="LName" class="<?php if($LNameError==='*'){echo 'formError';}?>" name="LName"/><span class="formError"><?php echo $LNameError;?></span><br>
         <label for="phoneNumber">Phone Number:</label>
-        <input type="text" value="<?php echo $phoneNumber;?>" id="phoneNumber" class="<?php if($phoneNumberError=="*"){echo "formError";}?>" name="phoneNumber"/><span class="formError"><?php echo $phoneNumberError;?></span><br>
+        <input type="text" value="<?php echo $phoneNumber;?>" id="phoneNumber" class="<?php if($phoneNumberError==='*'){echo 'formError';}?>" name="phoneNumber"/><span class="formError"><?php echo $phoneNumberError;?></span><br>
         <label for="email">Email:</label>
-        <input type="text" value="<?php echo $email;?>" id="email" class="<?php if($emailError=="*"){echo "formError";}?>" name="email"/><span class="formError"><?php echo $emailError;?></span><br>
+        <input type="text" value="<?php echo $email;?>" id="email" class="<?php if($emailError==='*'){echo 'formError';}?>" name="email"/><span class="formError"><?php echo $emailError;?></span><br>
         <label for="boothNumbers">Booths:</label>
-        <input type="text" value="<?php echo $boothNumbers;?>" id="boothNumbers" class="<?php if($boothError=="*"){echo "formError";}?>" name="boothNumbers" readonly="readonly"/><span class="formError"><?php echo $boothError;?></span><br>
+        <input type="text" value="<?php echo $boothNumbers;?>" id="boothNumbers" class="<?php if($boothError==='*'){echo 'formError';}?>" name="boothNumbers" readonly="readonly"/><span class="formError"><?php echo $boothError;?></span><br>
         <input type="submit" value="Register"/>
     </form>
 </div>
