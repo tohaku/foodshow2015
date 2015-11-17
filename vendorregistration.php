@@ -14,7 +14,8 @@ $FName = "First name";
 $LName = "Last name";
 $phoneNumber = "707-111-2222";
 $email = "email@hostname.com";
-$boothNumbers = "Select booths in the map below";
+//booths= blank, issue remembering booths, better to be blank and disable accidental form submission when no booths
+$boothNumbers = "";
 //errors for required fields or validation
 $formError = false;
 $vendorNameError = "";
@@ -130,7 +131,7 @@ echo ($_POST["boothNumbers"]);
         <label for="email">Email:</label>
         <input type="text" value="<?php echo $email;?>" id="email" class="<?php if($emailError=="*"){echo "formError";}?>" name="email"/><span class="formError"><?php echo $emailError;?></span><br>
         <label for="boothNumbers">Booths:</label>
-        <input type="text" value="<?php echo $boothNumbers;?>" id="boothNumbers" class="<?php if($boothError=="*"){echo "formError";}?>" name="boothNumbers"/><span class="formError"><?php echo $boothError;?></span><br>
+        <input type="text" value="<?php echo $boothNumbers;?>" id="boothNumbers" class="<?php if($boothError=="*"){echo "formError";}?>" name="boothNumbers" readonly="readonly"/><span class="formError"><?php echo $boothError;?></span><br>
         <input type="submit" value="Register"/>
     </form>
 </div>
