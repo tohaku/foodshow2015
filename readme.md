@@ -2,11 +2,17 @@
 Food show registration page for both vendors and customers using PHP and using PHP Storm.
 
 ##Change Log
-**11/15/2015**
+**11/16/2015**
+*Shhh added easter egg (hint: panda school director)
+*Remaining DBs created
+*Vendor form submission sends to DB
 
+**11/15/2015**
+*Fixed school registration error
+*Map interracts with form
 
 **11/14/2015**
-*Floormap booths and CSS done
+*Floormap booths and CSS drawing done
 *CSS QOL changes after feedback
 
 **11/11/2015**
