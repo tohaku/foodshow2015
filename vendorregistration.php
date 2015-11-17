@@ -16,7 +16,6 @@ $phoneNumber = "";
 $email = "";
 //booths= blank, issue remembering booths, better to be blank and disable accidental form submission when no booths
 $boothNumbers = "";
-$boothNumbersTest = "";
 //errors for required fields or validation
 $formError = false;
 $vendorNameError = "";
@@ -75,9 +74,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $boothNumbers = "Please select booths below";
         $formError = true;
     }else{
-        $boothNumbersTest = $_Post["boothNumbers"];
-        $boothNumbers = implode(',', $_Post["boothNumbers"]);
-        //this part not really working atm, just echoing blank
+        $boothNumbers = $_Post["boothNumbers"];
     }
 
     if(empty($_POST["phoneNumber"])){
@@ -126,7 +123,6 @@ function testInput($data){
 <div id="container">
     <?php
     echo "Should appear below me";
-    echo $boothNumbersTest;
     echo $boothNumbers;
     ?>
     <h3>Vendor Registration</h3>
