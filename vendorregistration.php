@@ -74,7 +74,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $boothNumbers = "Please select booths below";
         $formError = true;
     }else{
-        $boothNumbers = implode(',',$_Post["boothNumbers"]);
+        $boothNumbersTest = $_Post["boothNumbers"];
+        $boothNumbers = implode(',', $boothNumbersTest);
         //this part not really working atm, just echoing blank
     }
 
@@ -119,6 +120,10 @@ function testInput($data){
     $data = htmlspecialchars($data);
     return $data;
 }
+?>
+<?php
+    echo $boothNumbersTest;
+    echo $boothNumbers;
 ?>
 <div id="container">
     <h3>Vendor Registration</h3>
