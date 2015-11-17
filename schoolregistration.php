@@ -7,11 +7,11 @@
 <?php require("navbar.php");?>
 
 <?php
-    $schoolName = "Enter school name";
-    $FName = "First name";
-    $LName = "Last name";
-    $phoneNumber = "707-111-2222";
-    $email = "email@hostname.com";
+    $schoolName = "";
+    $FName = "";
+    $LName = "";
+    $phoneNumber = "";
+    $email = "";
     //errors for required fields or validation
     $formError = false;
     $schoolNameError = "";
@@ -25,6 +25,7 @@
         //need to check if required fields are empty and display error
         if(empty($_POST["schoolName"])){
             $schoolNameError = "*";
+            $schoolName = "Missing school name";
             $formError = true;
         }else {
             $schoolName = testInput($_POST["schoolName"]);
@@ -32,6 +33,7 @@
 
         if(empty($_POST["FName"])){
             $FNameError = "*";
+            $FName = "Missing first name";
             $formError = true;
         }else {
             $FName = testInput($_POST["FName"]);
@@ -39,6 +41,7 @@
 
         if(empty($_POST["LName"])){
             $LNameError = "*";
+            $LName = "Missing last name";
             $formError = true;
         }else {
             $LName = testInput($_POST["LName"]);
@@ -47,9 +50,11 @@
         //combined not empty and email verification
         if(empty($_POST["email"])) {
             $emailError = "*";
+            $email = "Missing email";
             $formError = true;
         }elseif(filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
             $emailError = "*";
+            $email = "Invalid email";
             $formError = true;
         }else{
             $email = testInput($_POST["email"]);

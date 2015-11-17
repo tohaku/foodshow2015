@@ -9,11 +9,11 @@
 <?php require("navbar.php");?>
 
 <?php
-$vendorName = "Enter vendor name";
-$FName = "First name";
-$LName = "Last name";
-$phoneNumber = "707-111-2222";
-$email = "email@hostname.com";
+$vendorName = "";
+$FName = "";
+$LName = "";
+$phoneNumber = "";
+$email = "";
 //booths= blank, issue remembering booths, better to be blank and disable accidental form submission when no booths
 $boothNumbers = "";
 //errors for required fields or validation
@@ -30,6 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     //need to check if required fields are empty and display error
     if(empty($_POST["vendorName"])){
         $vendorNameError = "*";
+        $vendorName ="Enter vendor name";
         $formError = true;
     }else {
         $schoolName = testInput($_POST["schoolName"]);
@@ -37,6 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if(empty($_POST["FName"])){
         $FNameError = "*";
+        $FName = "Enter first name";
         $formError = true;
     }else {
         $FName = testInput($_POST["FName"]);
@@ -44,6 +46,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if(empty($_POST["LName"])){
         $LNameError = "*";
+        $LName = "Enter last name";
         $formError = true;
     }else {
         $LName = testInput($_POST["LName"]);
@@ -52,9 +55,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     //combined not empty and email verification
     if(empty($_POST["email"])) {
         $emailError = "*";
+        $email ="Please enter email";
         $formError = true;
     }elseif(filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
         $emailError = "*";
+        $email ="invalid email entered";
         $formError = true;
     }else{
         $email = testInput($_POST["email"]);
@@ -62,6 +67,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if(empty($_POST["boothNumbers"])){
         $boothError = "*";
+        $boothNumbers = "Please select booths below";
         $formError = true;
     }else{
         $boothNumbers = $_Post["boothNumbers"];
@@ -70,6 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if(empty($_POST["phoneNumber"])){
         $phoneNumberError = "*";
+        $phoneNumber = "Please enter phone #";
         $formError = true;
     }else{
         $phoneNumber = testInput($_POST["phoneNumber"]);
