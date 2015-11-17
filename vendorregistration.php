@@ -16,6 +16,7 @@ $phoneNumber = "";
 $email = "";
 //booths= blank, issue remembering booths, better to be blank and disable accidental form submission when no booths
 $boothNumbers = "";
+$boothNumbersTest = "";
 //errors for required fields or validation
 $formError = false;
 $vendorNameError = "";
@@ -124,6 +125,7 @@ function testInput($data){
 
 <div id="container">
     <?php
+    echo "Should appear below me";
     echo $boothNumbersTest;
     echo $boothNumbers;
     ?>
