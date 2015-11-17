@@ -40,7 +40,7 @@
     </script>
 </head>
 <body>
-<div class = "header" style="background-color:<?php if($section=='school'){echo '#4CAF50';}elseif($section=='vendor'){echo '#B388FF';}elseif($section=='directions'){echo '#FF5722';}?>;">
+<div class = "header" style="background-color:<?php if($section=='school'){echo '#B39DDB';}elseif($section=='vendor'){echo '#00BFA5';}elseif($section=='directions'){echo '#FFCC80';}?>;">
     <span id="pageTitle"><a href="index.php"><img src="pics/gsfLogo.png"><?php echo $pageHeader; ?></img></a></span>
     <ul class="nav">
         <li class="<?php if ($section=="info"){echo"selectedPage";}?>"><a href="index.php">Information</a></li>
