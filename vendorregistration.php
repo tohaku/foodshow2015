@@ -65,6 +65,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $formError = true;
     }else{
         $boothNumbers = $_Post["boothNumbers"];
+        //this part not really working atm, just echoing blank
     }
 
     if(empty($_POST["phoneNumber"])){
@@ -113,8 +114,6 @@ function testInput($data){
             echo $key." : ".$entry."<br>";
         }
     }
-echo ($_POST["boothNumbers"]);
-
 ?>
 <div id="container">
     <h3>Vendor Registration</h3>
