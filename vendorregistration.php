@@ -121,10 +121,6 @@ function testInput($data){
 ?>
 
 <div id="container">
-    <?php
-    echo "Should appear below me";
-    echo $boothNumbers;
-    ?>
     <h3>Vendor Registration</h3>
     <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="vendorRegistration" accept-charset="utf-8">
         <?php if($formError){echo "<p class='formError'>Error: Please recheck your information</p>";}?>

@@ -40,7 +40,7 @@
     </script>
 </head>
 <body>
-<div class = "header" style="background-color:<?php if($section=='school'){echo '#B39DDB';}elseif($section=='vendor'){echo '#00BFA5';}elseif($section=='directions'){echo '#FFCC80';}?>;">
+<div class = "header" style="background-color:<?php if($section=='school'){echo '#B39DDB';}elseif($section=='vendor'){echo '#00BFA5';}elseif($section=='directions'){echo '#795548';}?>;">
     <span id="pageTitle"><a href="index.php"><img src="pics/gsfLogo.png">Slic COOP Food Show 2016 </img></a></span>
     <ul class="nav">
         <li class="<?php if ($section=="info"){echo"selectedPage";}?>"><a href="index.php">Information</a></li>
