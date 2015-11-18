@@ -127,19 +127,37 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
     }
 }
-$dbBoothResults = "SELECT booths FROM registeredBooths";
-mysql_select_db('foodshow2015');
-$retval3 = mysql_query($dbBoothResults, $dbconn);
-if(!$retval3){
-    die('Could not grab booths:'.mysql_error());
-}
-//loop to populate reserved booths array, galifrey
-while($row = mysql_fetch_array($retval3, MYSQL_ASSOC)){
-    $tempArray=explode(",",$row["booths"]);
-    $galifrey = array_merge($galifrey,$tempArray);
-}
+try {
+    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-mysql_close($dbconn);
+    $dbBoothResults = $conn->prepare("SELECT booths FROM registeredBooths");
+    $dbBoothResults->execute();
+
+    //$result = $dbBoothResults->setFetchMode(PDO::FETCH_ASSOC);
+
+    /*
+    $retval3 = mysql_query($dbBoothResults, $dbconn);
+    if (!$retval3) {
+        die('Could not grab booths:' . mysql_error());
+    }*/
+//loop to populate reserved booths array, galifrey
+    /*while ($row = mysql_fetch_array($retval3, MYSQL_ASSOC)) {
+        $tempArray = explode(",", $row["booths"]);
+        $galifrey = array_merge($galifrey, $tempArray);
+    }
+
+    mysql_close($dbconn);
+    */
+    while($row=$dbBoothResults->fetchAll()){
+        $tempArray = explode(",",$row["booths"]);
+        $galifrey = array_merge($galifrey, $tempArray);
+    }
+}
+catch(PDOException $e){
+    echo "Error: ".$e->getMessage();
+}
+$conn = null;
 
 //SQL injection prevention, normalize data
 function testInput($data){
