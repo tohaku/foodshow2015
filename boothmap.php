@@ -19,19 +19,6 @@
     }
     print_r($galifrey);
     mysql_close($dbconn);
-
-    function reservedBoothCheck($boothNumber)
-    {
-
-        /*i don't need to put into JS at all, I can just use PHP with the existing PHP that creates the map.
-        *create a php function that can be called in the create map below, if it returns false give it a different
-        *ID that can be styled differently.
-         * Then on the JS that add the booth to the array / form field, do a check on the id and if it's a no no
-         * don't add.
-        */
-
-        return false;
-    }
 ?>
 
 

@@ -1,14 +1,13 @@
-
-<?php
-    $pageTitle = "Vendor Registration";
-    $pageHeader = "Goldstar Norcal Food Show 2016";
-    $section = "vendor";
-    $totalBooths = "69";
-?>
-
 <?php require("navbar.php");?>
 
 <?php
+$pageTitle = "Vendor Registration";
+$pageHeader = "Goldstar Norcal Food Show 2016";
+$section = "vendor";
+$totalBooths = "69";
+$galifrey = [];//array to store all booth DB results
+
+
 $vendorName = "";
 $FName = "";
 $LName = "";
@@ -25,6 +24,7 @@ $phoneNumberError = "";
 $emailError = "";
 $boothError = "";
 
+$dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     //need to check if required fields are empty and display error
@@ -86,16 +86,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     //post the information if there's no problems
     if(!$formError){
-        $dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
+        //$dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
         $sql = "INSERT INTO vendorRegistration".
             "(vendorName,FName,LName,phoneNumber,email,boothNumbers)".
             "VALUES('$vendorName','$FName','$LName','$phoneNumber','$email','$boothNumbers')";
         $sql2 = "INSERT INTO registeredBooths".
             "(booths)".
             "VALUES('$boothNumbers')";
+
         mysql_select_db('foodshow2015');
         $retval = mysql_query($sql, $dbconn);
         $retval2 = mysql_query($sql2,$dbconn);
+
 
         if(!$retval){
             die('Could not submit vendors: '.mysql_error());
@@ -103,13 +105,28 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         if(!$retval2){
             die('Could not submit booths: '.mysql_error());
         }
-        mysql_close($dbconn);
+
+        //mysql_close($dbconn);
 
         //redirecting to thank you page
         header('Location: submitted.php');
         exit();
     }
 }
+//$dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
+$dbBoothResults = "SELECT booths FROM registeredBooths";
+mysql_select_db('foodshow2015');
+$retval3 = mysql_query($dbBoothResults, $dbconn);
+if(!$retval3){
+    die('Could not grab booths:'.mysql_error());
+}
+//loop to populate reserved booths array, galifrey
+while($row = mysql_fetch_array($retval3, MYSQL_ASSOC)){
+    $tempArray=explode(",",$row["booths"]);
+    $galifrey = array_merge($galifrey,$tempArray);
+}
+
+mysql_close($dbconn);
 
 //SQL injection prevention, normalize data
 function testInput($data){
@@ -145,9 +162,14 @@ function testInput($data){
     <?php
     $counter = 1;
     while ($counter<=$totalBooths){
+        $timeLords = "booth".$counter;
         if($counter<18) {
             if($counter == 1){echo "<div id='boothRow1'>";}
-            echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            if(in_array($timeLords,$galifrey)){
+                echo "<div class='boothReserved' id='booth" . $counter . "'>X</div>";
+            }else {
+                echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            }
         }
         elseif($counter<35){
             if($counter == 18) {
