@@ -58,8 +58,8 @@
       <file leaf-file-name="listschools.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listschools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="64" />
               <folding>
                 <marker date="1447618369757" expanded="true" signature="173:247" placeholder="SELECT schoo..registeredSchools..." />
               </folding>
@@ -70,10 +70,10 @@
       <file leaf-file-name="boothmap.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/boothmap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5207207">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.4900901">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
               <folding>
-                <marker date="1447874947205" expanded="true" signature="288:322" placeholder="SELECT booth..registeredBooths..." />
+                <marker date="1447875125832" expanded="true" signature="288:322" placeholder="SELECT booth..registeredBooths..." />
               </folding>
             </state>
           </provider>
@@ -689,16 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/listschools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <marker date="1447618369757" expanded="true" signature="173:247" placeholder="SELECT schoo..registeredSchools..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/databasefunctions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537">
@@ -747,12 +737,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/listschools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="64" />
+          <folding>
+            <marker date="1447618369757" expanded="true" signature="173:247" placeholder="SELECT schoo..registeredSchools..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/boothmap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5207207">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.4900901">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
-            <marker date="1447874947205" expanded="true" signature="288:322" placeholder="SELECT booth..registeredBooths..." />
+            <marker date="1447875125832" expanded="true" signature="288:322" placeholder="SELECT booth..registeredBooths..." />
           </folding>
         </state>
       </provider>

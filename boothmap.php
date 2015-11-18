@@ -14,6 +14,7 @@ $totalBooths = 69;
         $retval = mysql_query($sql, $dbconn);
 
         while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
+            echo $row["booth"];
             if($row["booth"]===$boothNumber){
                 mysql_close($dbconn);
                 return true;
@@ -30,8 +31,6 @@ $totalBooths = 69;
     }
 ?>
 
-
-<input type="button" value="test script" onClick="fillBooths()"/>
 
 <div id="floorMap">
     <div class="floormapText"><p>Kitchen and Restrooms</p></div>
