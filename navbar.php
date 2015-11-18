@@ -35,7 +35,7 @@
             var tempVar = boothsArray.slice(1,boothsArray.length);
             //var tempProblemSolver = boothsArray.slice(1,tempVar);
             document.getElementById('boothNumbers').value = tempVar.toString();
-            console.log(temVar.toString());
+            console.log(tempVar.toString());
         }
 
     </script>
