@@ -74,18 +74,19 @@
         //post the information if there's no problems
         if($FName!="panda") {
             if (!$formError) {
-                //$dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
-                $dbconn = new mysqli($dbhost, $dbuser, $dbpass);
-                if($dbconn->connect_error){
-                    die("Connection failed: "..$dbconn->connect_error);
-                }
-                $sql = "INSERT INTO registeredSchools" .
-                    "(schoolName,FName,LName,phoneNumber,email)" .
-                    "VALUES('$schoolName','$FName','$LName','$phoneNumber','$email')";
+                try {
+                    //$dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
+                    $dbconn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
 
-                $didItWork = mysqli_query($dbconn,$sql);
-                if(!$didItWork){
-                    echo "Error: ".$sql."<br>".mysqli_error($dbconn);
+                    $dbconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                    $sql = "INSERT INTO registeredSchools" .
+                        "(schoolName,FName,LName,phoneNumber,email)" .
+                        "VALUES('$schoolName','$FName','$LName','$phoneNumber','$email')";
+
+                    $dbconn->exec($sql);
+                }catch(PDOException $e){
+                    echo $sql."<br>".$e->getMessage();
                 }
                 /*
                 //mysql_select_db('foodshow2015');
@@ -95,8 +96,8 @@
                     die('Could not submit data: ' . mysql_error());
                 }
                 */
-                mysqli_close($dbconn);
-
+                //mysql_close($dbconn);
+                $dbconn=null;
                 //redirecting to thank you page
                 header('Location: submitted.php');
                 exit();
