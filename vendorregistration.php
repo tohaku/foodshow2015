@@ -106,22 +106,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                }
             }
 
-            /*
-            mysql_select_db('foodshow2015');
-            $retval = mysql_query($sql, $dbconn);
-            $retval2 = mysql_query($sql2, $dbconn);
-
-
-            if (!$retval) {
-                die('Could not submit vendors: ' . mysql_error());
-            }
-            if (!$retval2) {
-                die('Could not submit booths: ' . mysql_error());
-            }
-            */
-            //redirecting to thank you page
-            //header('Location: submitted.php');
-           // exit();
         }catch(PDOException $e){
             echo "Error: ".$e->getMessage();
         }
@@ -133,24 +117,8 @@ try {
 
     $dbBoothResults = $conn->prepare("SELECT booths FROM registeredBooths");
     $dbBoothResults->execute();
-
-    //$result = $dbBoothResults->setFetchMode(PDO::FETCH_ASSOC);
-
-    /*
-    $retval3 = mysql_query($dbBoothResults, $dbconn);
-    if (!$retval3) {
-        die('Could not grab booths:' . mysql_error());
-    }*/
-//loop to populate reserved booths array, galifrey
-    /*while ($row = mysql_fetch_array($retval3, MYSQL_ASSOC)) {
-        $tempArray = explode(",", $row["booths"]);
-        $galifrey = array_merge($galifrey, $tempArray);
-    }
-
-    mysql_close($dbconn);
-    */
+    
     $row=$dbBoothResults->fetchAll();
-    //for($countDown = 0; $countDown<sizeof($row);$countDown++){
     foreach($row as $results){
         $tempArray = explode(",", $results["booths"]);
         $galifrey = array_merge($galifrey, $tempArray);
