@@ -5,20 +5,6 @@
 ?>
 
 <?php require("navbar.php");?>
-<?php
-$dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
-
-if (!dbconn){
-    die("Couldn't connect to the database". mysql_error());
-}
-$sql = "SELECT vendorName FROM registeredVendors";
-mysql_select_db('foodshow2015');
-$retval = mysql_query($sql,$dbconn);
-
-if(!retval){
-    die("Sadly it didn't not connect to the database: ". mysql_error());
-}
-?>
 
 <div id="container">
     <h2>Details</h2>
@@ -36,6 +22,18 @@ if(!retval){
     </p>
     <h2>Registered Processors with more to come</h2>
     <?php
+    $dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
+
+    if (!dbconn){
+        die("Couldn't connect to the database". mysql_error());
+    }
+    $sql = "SELECT vendorName FROM registeredVendors";
+    mysql_select_db('foodshow2015');
+    $retval = mysql_query($sql,$dbconn);
+
+    if(!retval){
+        die("Sadly it didn't not connect to the database: ". mysql_error());
+    }
     while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
         echo "<p>".$row["vendorName"]."</p><br>";
     }
