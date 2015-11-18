@@ -75,7 +75,6 @@
         if($FName!="panda") {
             if (!$formError) {
                 try {
-                    //$dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
                     $dbconn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
 
                     $dbconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -84,19 +83,13 @@
                         "(schoolName,FName,LName,phoneNumber,email)" .
                         "VALUES('$schoolName','$FName','$LName','$phoneNumber','$email')";
 
-                    $dbconn->exec($sql);
+                    if($dbconn->exec($sql)){
+                        header('Location: submitted.php');
+                        exit();
+                    }
                 }catch(PDOException $e){
                     echo $sql."<br>".$e->getMessage();
                 }
-                /*
-                //mysql_select_db('foodshow2015');
-                //$retval = mysql_query($sql, $dbconn);
-
-                if (!$retval) {
-                    die('Could not submit data: ' . mysql_error());
-                }
-                */
-                //mysql_close($dbconn);
                 $dbconn=null;
                 //redirecting to thank you page
                 //header('Location: submitted.php');
