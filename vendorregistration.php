@@ -127,7 +127,7 @@ function testInput($data){
     echo $boothNumbers;
     ?>
     <h3>Vendor Registration</h3>
-    <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="vendorRegistration">
+    <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="vendorRegistration" accept-charset="utf-8">
         <?php if($formError){echo "<p class='formError'>Error: Please recheck your information</p>";}?>
         <label for="vendorName">Vendor Name:</label>
         <input type="text" value="<?php echo $vendorName;?>" id="vendorName" class="<?php if($vendorNameError==='*'){echo 'formError';}?>" name="vendorName"/><span class="formError"><?php echo $vendorNameError;?></span><br>
