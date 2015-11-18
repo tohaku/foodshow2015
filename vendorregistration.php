@@ -74,8 +74,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $boothNumbers = "Please select booths below";
         $formError = true;
     }else{
-        //$boothNumbers = implode(',',$_Post["boothNumbers"]);
-        $boothNumbers = "Print Me";
+        $boothNumbers = implode(',',$_Post["boothNumbers"]);
+        //$boothNumbers = "Print Me";
     }
 
     if(empty($_POST["phoneNumber"])){
