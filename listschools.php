@@ -1,5 +1,5 @@
 <?php require("navbar.php");?>
-<div style="background-color: #fff; width: 100%; height: 100%;">
+<div style="background-color: #fff;">
 <?php
 $dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
 
@@ -7,7 +7,7 @@ if (!dbconn){
     die("Couldn't connect to the database". mysql_error());
 }
 
-$sql = "SELECT schoolName, FName, LName, phoneNumber, email FROM registeredSchools";
+$sql = "SELECT schoolName, FName, LName, phoneNumber, email FROM registeredSchools ORDER BY schoolName ASC";
 mysql_select_db('foodshow2015');
 $retval = mysql_query($sql,$dbconn);
 
