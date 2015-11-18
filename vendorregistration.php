@@ -150,8 +150,9 @@ try {
     mysql_close($dbconn);
     */
     $row=$dbBoothResults->fetchAll();
-    for($countDown = 0; $countDown<sizeof($row);$countDown++){
-        $tempArray = explode(",", $row[$countDown]);
+    //for($countDown = 0; $countDown<sizeof($row);$countDown++){
+    foreach($row as $results){
+        $tempArray = explode(",", $results["booths"]);
         $galifrey = array_merge($galifrey, $tempArray);
     }
 }
