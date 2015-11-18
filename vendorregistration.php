@@ -52,7 +52,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $LName = testInput($_POST["LName"]);
     }
 
-    //combined not empty and email verification
     if(empty($_POST["email"])) {
         $emailError = "*";
         $email ="Please enter email";
@@ -86,7 +85,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     //post the information if there's no problems
     if(!$formError){
-        //$dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
         $sql = "INSERT INTO vendorRegistration".
             "(vendorName,FName,LName,phoneNumber,email,boothNumbers)".
             "VALUES('$vendorName','$FName','$LName','$phoneNumber','$email','$boothNumbers')";
@@ -106,14 +104,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             die('Could not submit booths: '.mysql_error());
         }
 
-        //mysql_close($dbconn);
-
         //redirecting to thank you page
         header('Location: submitted.php');
         exit();
     }
 }
-//$dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
 $dbBoothResults = "SELECT booths FROM registeredBooths";
 mysql_select_db('foodshow2015');
 $retval3 = mysql_query($dbBoothResults, $dbconn);

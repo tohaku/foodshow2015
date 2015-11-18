@@ -5,6 +5,22 @@
 ?>
 
 <?php require("navbar.php");?>
+<?php
+$dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
+
+if (!dbconn){
+    die("Couldn't connect to the database". mysql_error());
+}
+$sql = "SELECT vendorName FROM registeredVendors";
+mysql_select_db('foodshow2015');
+$retval = mysql_query($sql,$dbconn);
+
+if(!retval){
+    die("Sadly it didn't not connect to the database: ". mysql_error());
+}
+mysql_close($dbconn);
+?>
+
 <div id="container">
     <h2>Details</h2>
     <p>The event will be held at the Solano County Fairgrounds on October 25th.<br>
@@ -19,10 +35,12 @@
         <a href="#" target="_blank">$109 per night for 1 king bed</a><br>
         <a href="#" target="_blank">$119 per night for 2 queen beds</a>
     </p>
-    <h2>Registered Processors<br><span class="headerSubText">with more to come</span></h2>
-    <table>
-        <tr><td>Spitting out currently registered vendors</td></tr>
-    </table>
+    <h2>Registered Processors with more to come</h2>
+    <?php
+    while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
+        echo "<p>".$row["vendorName"]."</p><br>";
+    }
+    ?>
 </div>
 </body>
 

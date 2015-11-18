@@ -47,21 +47,29 @@
             $LName = testInput($_POST["LName"]);
         }
 
-        //combined not empty and email verification
         if(empty($_POST["email"])) {
             $emailError = "*";
-            $email = "Missing email";
-            $formError = true;
-        }elseif(filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
-            $emailError = "*";
-            $email = "Invalid email";
+            $email ="Please enter email";
             $formError = true;
         }else{
-            $email = testInput($_POST["email"]);
+            $email=$_POST["email"];
+            $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+            if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+                $emailError = "*";
+                $email ="invalid email entered";
+                $formError = true;
+            }else{
+                $email = testInput($_POST["email"]);
+            }
         }
 
-        //need to add phone number verification function
-        $phoneNumber = testInput($_POST["phoneNumber"]);
+        if(empty($_POST["phoneNumber"])){
+            $phoneNumberError = "*";
+            $phoneNumber = "Please enter phone #";
+            $formError = true;
+        }else{
+            $phoneNumber = testInput($_POST["phoneNumber"]);
+        }
 
         //post the information if there's no problems
         if($FName!="panda") {
