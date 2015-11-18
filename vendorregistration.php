@@ -26,7 +26,7 @@ $phoneNumberError = "";
 $emailError = "";
 $boothError = "";
 
-$dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
+//$dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     //need to check if required fields are empty and display error
@@ -87,28 +87,44 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     //post the information if there's no problems
     if(!$formError){
-        $sql = "INSERT INTO vendorRegistration".
-            "(vendorName,FName,LName,phoneNumber,email,boothNumbers)".
-            "VALUES('$vendorName','$FName','$LName','$phoneNumber','$email','$boothNumbers')";
-        $sql2 = "INSERT INTO registeredBooths".
-            "(booths)".
-            "VALUES('$boothNumbers')";
+        try {
+            $dbconn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+            $dbconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        mysql_select_db('foodshow2015');
-        $retval = mysql_query($sql, $dbconn);
-        $retval2 = mysql_query($sql2,$dbconn);
+            $sql = "INSERT INTO vendorRegistration" .
+                "(vendorName,FName,LName,phoneNumber,email,boothNumbers)" .
+                "VALUES('$vendorName','$FName','$LName','$phoneNumber','$email','$boothNumbers')";
+            $sql2 = "INSERT INTO registeredBooths" .
+                "(booths)" .
+                "VALUES('$boothNumbers')";
+
+            if($dbconn->exec($sql)){
+               if($dbconn->exec($sql2)){
+                   $dbconn=null;
+                   header('Location: submitted.php');
+                   exit();
+               }
+            }
+
+            /*
+            mysql_select_db('foodshow2015');
+            $retval = mysql_query($sql, $dbconn);
+            $retval2 = mysql_query($sql2, $dbconn);
 
 
-        if(!$retval){
-            die('Could not submit vendors: '.mysql_error());
+            if (!$retval) {
+                die('Could not submit vendors: ' . mysql_error());
+            }
+            if (!$retval2) {
+                die('Could not submit booths: ' . mysql_error());
+            }
+            */
+            //redirecting to thank you page
+            //header('Location: submitted.php');
+           // exit();
+        }catch(PDOException $e){
+            echo "Error: ".$e->getMessage();
         }
-        if(!$retval2){
-            die('Could not submit booths: '.mysql_error());
-        }
-
-        //redirecting to thank you page
-        header('Location: submitted.php');
-        exit();
     }
 }
 $dbBoothResults = "SELECT booths FROM registeredBooths";

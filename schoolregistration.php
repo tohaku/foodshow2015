@@ -84,6 +84,7 @@
                         "VALUES('$schoolName','$FName','$LName','$phoneNumber','$email')";
 
                     if($dbconn->exec($sql)){
+                        $dbconn=null;
                         header('Location: submitted.php');
                         exit();
                     }
@@ -91,9 +92,6 @@
                     echo $sql."<br>".$e->getMessage();
                 }
                 $dbconn=null;
-                //redirecting to thank you page
-                //header('Location: submitted.php');
-               // exit();
             }
         }
     }
