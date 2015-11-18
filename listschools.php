@@ -1,5 +1,5 @@
 <?php require("navbar.php");?>
-<div id="container">
+<div style="background-color: #fff;">
 <?php
 $dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
 

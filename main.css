@@ -207,7 +207,9 @@ label {
 }
 
 #schoolListTable{
-
+    width: 800px;
+    margin: 20px auto 0;
+    font-size: 18px;
 }
 
 #schoolListTable th {
