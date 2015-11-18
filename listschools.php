@@ -1,4 +1,5 @@
 <?php require("navbar.php");?>
+<div id="container">
 <?php
 $dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
 
@@ -13,7 +14,7 @@ $retval = mysql_query($sql,$dbconn);
 if(!retval){
     die("Sadly it didn't not connect to the database: ". mysql_error());
 }
-echo "<table>".
+echo "<table id='schoolListTable'>".
     "<tr><th>School Name</th><th>First Name</th><th>Last name</th><th>Phone #</th><th>Email</th></tr>";
 while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
     echo "<tr>";
@@ -24,5 +25,6 @@ while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
 mysql_close($dbconn);
 echo "</table>";
 ?>
+</div>
 </body>
 </html>
