@@ -44,11 +44,11 @@ while ($counter<=$totalBooths){
     if($counter<18) {
         if($counter == 1){echo "<div id='boothRow1'>";}
             if(in_array($timeLords,$galifrey)){
-                echo "<div class='boothReserved' id='booth" . $counter . ">" . $counter . "</div>";
+                echo "<div class='boothReserved' id='booth" . $counter . ">X</div>";
             }
-        else {
-            echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
-        }
+            else {
+                echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            }
     }
     elseif($counter<35){
         if($counter == 18) {
