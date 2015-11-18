@@ -43,7 +43,7 @@ while ($counter<=$totalBooths){
     $timeLords = "booth".$counter;
     if($counter<18) {
         if($counter == 1){echo "<div id='boothRow1'>";}
-            if(reservedBoothCheck($timeLords)){
+            if(in_array($timeLords,$galifrey)){
                 echo "<div class='boothReserved' id='booth" . $counter . ">" . $counter . "</div>";
             }
         else {
