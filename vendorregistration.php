@@ -149,10 +149,8 @@ try {
 
     mysql_close($dbconn);
     */
-    while($row=$dbBoothResults->fetchAll()){
-        $tempArray = explode(",",$row["booths"]);
-        $galifrey = array_merge($galifrey, $tempArray);
-    }
+    $row=$dbBoothResults->fetchAll();
+    print_r($row);
 }
 catch(PDOException $e){
     echo "Error: ".$e->getMessage();
