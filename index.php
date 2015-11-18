@@ -20,7 +20,7 @@
         <a href="#" target="_blank">$109 per night for 1 king bed</a><br>
         <a href="#" target="_blank">$119 per night for 2 queen beds</a>
     </p>
-    <h2>Registered Processors with more to come</h2>
+    <h2>Registered processors with more to come</h2>
     <?php
     $dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
 
@@ -34,10 +34,12 @@
     if(!retval){
         die("Sadly it didn't not connect to the database: ". mysql_error());
     }
+    echo "<ul>";
     while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
-        echo "<p>".$row["vendorName"]."</p><br>";
+        echo "<li>".$row["vendorName"]."</li>";
     }
     mysql_close($dbconn);
+    echo "</ul>";
     ?>
 </div>
 </body>
