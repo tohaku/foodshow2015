@@ -33,9 +33,8 @@
             //issue with first value in array being duplicated and not removed
             //using workaround to ignore 0 index in boothsArray
             var tempVar = boothsArray.slice(1,boothsArray.length);
-            //var tempProblemSolver = boothsArray.slice(1,tempVar);
+            //have to convert to string or issue with PHP submitting booth form field
             document.getElementById('boothNumbers').value = tempVar.toString();
-            console.log(tempVar.toString());
         }
 
     </script>

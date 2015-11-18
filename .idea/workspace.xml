@@ -35,8 +35,8 @@
       <file leaf-file-name="schoolregistration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schoolregistration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769">
-              <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+            <state vertical-scroll-proportion="-3.9230769">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="30" />
               <folding>
                 <marker date="1447791868804" expanded="true" signature="2004:2188" placeholder="INSERT INTO ..." />
                 <marker date="1447791868804" expanded="true" signature="4798:4847" placeholder="..." />
@@ -45,28 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vendorregistration.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendorregistration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6738739">
-              <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
-              <folding>
-                <marker date="1447825933524" expanded="true" signature="2502:2698" placeholder="INSERT INTO ..." />
-                <marker date="1447825933524" expanded="true" signature="2718:2746" placeholder="INSERT INTO ..." />
-                <marker date="1447825933524" expanded="true" signature="2718:2770" placeholder="INSERT INTO ..." />
-                <marker date="1447825933524" expanded="true" signature="2718:2771" placeholder="INSERT INTO ..." />
-                <marker date="1447825933524" expanded="true" signature="2718:2809" placeholder="INSERT INTO ..." />
-                <marker date="1447825933524" expanded="true" signature="2718:2810" placeholder="INSERT INTO ..." />
-                <marker date="1447825933524" expanded="true" signature="5493:5693" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="submitted.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/submitted.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-1.9615384">
               <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
               <folding />
             </state>
@@ -76,10 +58,22 @@
       <file leaf-file-name="listschools.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listschools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="36" />
               <folding>
                 <marker date="1447618369757" expanded="true" signature="173:247" placeholder="SELECT schoo..registeredSchools..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boothmap.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/boothmap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42882884">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <marker date="1447827194279" expanded="true" signature="215:249" placeholder="SELECT booth..registeredBooths..." />
               </folding>
             </state>
           </provider>
@@ -111,8 +105,8 @@
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.346153">
-              <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+            <state vertical-scroll-proportion="-22.884615">
+              <caret line="35" column="85" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -125,6 +119,19 @@
               <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
               <folding>
                 <element signature="e#6#90#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vendorregistration.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendorregistration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.153846">
+              <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
+              <folding>
+                <marker date="1447826013819" expanded="true" signature="2401:2597" placeholder="INSERT INTO ..." />
+                <marker date="1447826013819" expanded="true" signature="2617:2708" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -155,14 +162,14 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/submitted.php" />
         <option value="$PROJECT_DIR$/listschools.php" />
-        <option value="$PROJECT_DIR$/boothmap.php" />
         <option value="$PROJECT_DIR$/.idea/jsfunctions.js" />
         <option value="$PROJECT_DIR$/jsfunctions.js" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/schoolregistration.php" />
         <option value="$PROJECT_DIR$/main.css" />
-        <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$PROJECT_DIR$/vendorregistration.php" />
+        <option value="$PROJECT_DIR$/navbar.php" />
+        <option value="$PROJECT_DIR$/boothmap.php" />
       </list>
     </option>
   </component>
@@ -179,8 +186,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-17" />
     <option name="width" value="1296" />
     <option name="height" value="1000" />
   </component>
@@ -211,7 +217,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.ChangelistConflict" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsfunctions.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/boothmap.php" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="FullScreen" value="false" />
@@ -263,7 +269,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-17" y="0" width="1296" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -377,13 +383,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <marker date="1447825933524" expanded="true" signature="2502:2698" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2746" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2770" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2771" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2809" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2810" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="5493:5693" placeholder="..." />
+            <marker date="1447826013819" expanded="true" signature="2401:2597" placeholder="INSERT INTO ..." />
+            <marker date="1447826013819" expanded="true" signature="2617:2708" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -457,13 +458,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="26" />
           <folding>
-            <marker date="1447825933524" expanded="true" signature="2502:2698" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2746" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2770" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2771" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2809" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2810" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="5493:5693" placeholder="..." />
+            <marker date="1447826013819" expanded="true" signature="2401:2597" placeholder="INSERT INTO ..." />
+            <marker date="1447826013819" expanded="true" signature="2617:2708" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -537,13 +533,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="85" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
           <folding>
-            <marker date="1447825933524" expanded="true" signature="2502:2698" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2746" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2770" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2771" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2809" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2810" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="5493:5693" placeholder="..." />
+            <marker date="1447826013819" expanded="true" signature="2401:2597" placeholder="INSERT INTO ..." />
+            <marker date="1447826013819" expanded="true" signature="2617:2708" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -655,21 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boothmap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/jsfunctions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35111877">
@@ -688,14 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/submitted.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -704,16 +672,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listschools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding>
-            <marker date="1447618369757" expanded="true" signature="173:247" placeholder="SELECT schoo..registeredSchools..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,10 +691,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.884615">
+          <caret line="35" column="85" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendorregistration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.153846">
+          <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
+          <folding>
+            <marker date="1447826013819" expanded="true" signature="2401:2597" placeholder="INSERT INTO ..." />
+            <marker date="1447826013819" expanded="true" signature="2617:2708" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submitted.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/schoolregistration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="30" />
           <folding>
             <marker date="1447791868804" expanded="true" signature="2004:2188" placeholder="INSERT INTO ..." />
             <marker date="1447791868804" expanded="true" signature="4798:4847" placeholder="..." />
@@ -744,26 +737,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/navbar.php">
+    <entry file="file://$PROJECT_DIR$/listschools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding />
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <marker date="1447618369757" expanded="true" signature="173:247" placeholder="SELECT schoo..registeredSchools..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendorregistration.php">
+    <entry file="file://$PROJECT_DIR$/boothmap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6738739">
-          <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.42882884">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <marker date="1447825933524" expanded="true" signature="2502:2698" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2746" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2770" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2771" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2809" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="2718:2810" placeholder="INSERT INTO ..." />
-            <marker date="1447825933524" expanded="true" signature="5493:5693" placeholder="..." />
+            <marker date="1447827194279" expanded="true" signature="215:249" placeholder="SELECT booth..registeredBooths..." />
           </folding>
         </state>
       </provider>

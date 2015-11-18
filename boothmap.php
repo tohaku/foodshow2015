@@ -1,19 +1,28 @@
-<!DOCTYPE html>
-<head>
-    <script>
-        function registerBooth(test){
-            alert("A booth has been clicked");
-            alert(test);
-        }
-    </script>
-</head>
-<body>
+<?php require("navbar.php");?>
 
 <?php
     $totalBooths = 69;
-?>
+    $dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
+    if (!dbconn){
+        die("Couldn't connect to the database". mysql_error());
+    }
+    $sql = "SELECT booth FROM registeredBooths";
+    mysql_select_db('foodshow2015');
+    $retval = mysql_query($sql,$dbconn);
+    $dServer = array();
 
-<?php require("navbar.php");?>
+    while($row = mysql_fetch_assoc($result)){
+        $dServer[] = $row["booth"];
+    }
+?>
+<script>
+    function fillBooths(){
+        var filledBooths=<?php echo json_encode($dServer);?>;
+        console.log(filledBooths);
+    }
+</script>
+
+<input type="button" value="test script" onClick="fillBooths()"/>
 
 <div id="floorMap">
     <div class="floormapText"><p>Kitchen and Restrooms</p></div>
