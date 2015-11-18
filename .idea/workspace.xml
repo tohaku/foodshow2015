@@ -70,10 +70,10 @@
       <file leaf-file-name="boothmap.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/boothmap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4900901">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.09189189">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
               <folding>
-                <marker date="1447875125832" expanded="true" signature="288:322" placeholder="SELECT booth..registeredBooths..." />
+                <marker date="1447875245044" expanded="true" signature="319:353" placeholder="SELECT booth..registeredBooths..." />
               </folding>
             </state>
           </provider>
@@ -749,10 +749,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boothmap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4900901">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.09189189">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
           <folding>
-            <marker date="1447875125832" expanded="true" signature="288:322" placeholder="SELECT booth..registeredBooths..." />
+            <marker date="1447875245044" expanded="true" signature="319:353" placeholder="SELECT booth..registeredBooths..." />
           </folding>
         </state>
       </provider>

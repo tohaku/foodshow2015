@@ -4,7 +4,7 @@
 $totalBooths = 69;
     function reservedBoothCheck($boothNumber)
     {
-
+        echo "function called";
         $dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
         if (!dbconn) {
             die("Couldn't connect to the database" . mysql_error());
