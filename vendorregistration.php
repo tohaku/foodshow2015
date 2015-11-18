@@ -1,9 +1,11 @@
-<?php require("navbar.php");?>
-
 <?php
 $pageTitle = "Vendor Registration";
 $pageHeader = "Goldstar Norcal Food Show 2016";
 $section = "vendor";
+require("navbar.php");
+?>
+
+<?php
 $totalBooths = "69";
 $galifrey = [];//array to store all booth DB results
 
