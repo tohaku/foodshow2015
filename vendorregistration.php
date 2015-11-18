@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $vendorName ="Enter vendor name";
         $formError = true;
     }else {
-        $schoolName = testInput($_POST["schoolName"]);
+        $vendorName = testInput($_POST["vendorName"]);
     }
 
     if(empty($_POST["FName"])){
