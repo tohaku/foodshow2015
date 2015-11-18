@@ -13,12 +13,16 @@ $retval = mysql_query($sql,$dbconn);
 if(!retval){
     die("Sadly it didn't not connect to the database: ". mysql_error());
 }
+echo "<table>".
+    "<tr><th>School Name</th><th>First Name</th><th>Last name</th><th>Phone #</th><th>Email</th></tr>";
 while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
-    echo $row["schoolName"]." ".$row["FName"]." ".$row["LName"];
+    echo "<tr>";
+    echo "<td>".$row["schoolName"]."</td><td>".$row["FName"]."</td><td>".$row["LName"]."</td><td>".$row["phoneNumber"]."</td><td>".$row["email"]."</td>";
+    echo "</tr>";
 }
 
 mysql_close($dbconn);
-
+echo "</table>";
 ?>
 </body>
 </html>
