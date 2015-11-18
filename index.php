@@ -18,7 +18,6 @@ $retval = mysql_query($sql,$dbconn);
 if(!retval){
     die("Sadly it didn't not connect to the database: ". mysql_error());
 }
-mysql_close($dbconn);
 ?>
 
 <div id="container">
@@ -40,6 +39,7 @@ mysql_close($dbconn);
     while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
         echo "<p>".$row["vendorName"]."</p><br>";
     }
+    mysql_close($dbconn);
     ?>
 </div>
 </body>
