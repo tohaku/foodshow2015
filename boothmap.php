@@ -38,9 +38,10 @@ $totalBooths = 69;
 <?php
 $counter = 1;
 while ($counter<=$totalBooths){
+    $timeLords = "booth".$counter;
     if($counter<18) {
         if($counter == 1){echo "<div id='boothRow1'>";}
-            if(reservedBoothCheck("booth".$counter)){
+            if(reservedBoothCheck($timeLords)){
                 echo "<div class='boothReserved' id='booth" . $counter . ">" . $counter . "</div>";
             }
         else {
