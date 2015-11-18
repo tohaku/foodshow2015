@@ -27,7 +27,7 @@
     if (!dbconn){
         die("Couldn't connect to the database". mysql_error());
     }
-    $sql = "SELECT vendorName FROM registeredVendors";
+    $sql = "SELECT vendorName FROM vendorRegistration ORDER BY vendorName ASC";
     mysql_select_db('foodshow2015');
     $retval = mysql_query($sql,$dbconn);
 
