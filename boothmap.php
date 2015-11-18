@@ -19,6 +19,9 @@
     function fillBooths(){
         var filledBooths=<?php echo json_encode($dServer);?>;
         console.log(filledBooths);
+        for(i=0;i<filledBooths.length;i++){
+            console.log(filledBooths[i]);
+        }
     }
 </script>
 
