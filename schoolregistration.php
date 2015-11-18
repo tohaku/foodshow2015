@@ -74,17 +74,28 @@
         //post the information if there's no problems
         if($FName!="panda") {
             if (!$formError) {
-                $dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
+                //$dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
+                $dbconn = new mysqli($dbhost, $dbuser, $dbpass);
+                if($dbconn->connect_error){
+                    die("Connection failed: "..$dbconn->connect_error);
+                }
                 $sql = "INSERT INTO registeredSchools" .
                     "(schoolName,FName,LName,phoneNumber,email)" .
                     "VALUES('$schoolName','$FName','$LName','$phoneNumber','$email')";
-                mysql_select_db('foodshow2015');
-                $retval = mysql_query($sql, $dbconn);
+
+                $didItWork = mysqli_query($dbconn,$sql);
+                if(!$didItWork){
+                    echo "Error: ".$sql."<br>".mysqli_error($dbconn);
+                }
+                /*
+                //mysql_select_db('foodshow2015');
+                //$retval = mysql_query($sql, $dbconn);
 
                 if (!$retval) {
                     die('Could not submit data: ' . mysql_error());
                 }
-                mysql_close($dbconn);
+                */
+                mysqli_close($dbconn);
 
                 //redirecting to thank you page
                 header('Location: submitted.php');
