@@ -99,8 +99,8 @@
                 //mysql_close($dbconn);
                 $dbconn=null;
                 //redirecting to thank you page
-                header('Location: submitted.php');
-                exit();
+                //header('Location: submitted.php');
+               // exit();
             }
         }
     }
