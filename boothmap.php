@@ -40,7 +40,12 @@ $counter = 1;
 while ($counter<=$totalBooths){
     if($counter<18) {
         if($counter == 1){echo "<div id='boothRow1'>";}
-        echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            if(reservedBoothCheck("booth".$counter)){
+                echo "<div class='boothReserved' id='booth" . $counter . ">" . $counter . "</div>";
+            }
+        else {
+            echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+        }
     }
     elseif($counter<35){
         if($counter == 18) {

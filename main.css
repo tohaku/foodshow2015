@@ -46,7 +46,7 @@ html {
     display: inline-block;
     margin: 2px;
     font-family: Oswald sans-serif;
-    font-size:28px;
+    font-size:32px;
 }
 
 
@@ -173,6 +173,17 @@ label {
     text-align: center;
     font-size: 18px;
     padding: 2px;
+}
+
+.boothReserved {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 18px;
+    padding: 2px;
+    background-color: #F00000;
 }
 
 .booth:hover {
