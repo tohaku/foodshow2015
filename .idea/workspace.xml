@@ -58,8 +58,8 @@
       <file leaf-file-name="listschools.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listschools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="36" />
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
               <folding>
                 <marker date="1447618369757" expanded="true" signature="173:247" placeholder="SELECT schoo..registeredSchools..." />
               </folding>
@@ -70,10 +70,11 @@
       <file leaf-file-name="boothmap.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/boothmap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3981982">
-              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.5099099">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding>
-                <marker date="1447827328008" expanded="true" signature="215:249" placeholder="SELECT booth..registeredBooths..." />
+                <marker date="1447828514598" expanded="true" signature="215:249" placeholder="SELECT booth..registeredBooths..." />
+                <marker date="1447828514598" expanded="true" signature="949:1129" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -105,7 +106,7 @@
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.884615">
+            <state vertical-scroll-proportion="-18.961538">
               <caret line="35" column="85" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
               <folding />
             </state>
@@ -270,7 +271,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-17" y="0" width="1296" height="1000" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2686818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -691,14 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.884615">
-          <caret line="35" column="85" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -737,10 +730,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.961538">
+          <caret line="35" column="85" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/listschools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="36" />
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
           <folding>
             <marker date="1447618369757" expanded="true" signature="173:247" placeholder="SELECT schoo..registeredSchools..." />
           </folding>
@@ -749,10 +750,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boothmap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3981982">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.5099099">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
-            <marker date="1447827328008" expanded="true" signature="215:249" placeholder="SELECT booth..registeredBooths..." />
+            <marker date="1447828514598" expanded="true" signature="215:249" placeholder="SELECT booth..registeredBooths..." />
+            <marker date="1447828514598" expanded="true" signature="949:1129" placeholder="..." />
           </folding>
         </state>
       </provider>

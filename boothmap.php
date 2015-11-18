@@ -14,16 +14,15 @@
     while($row = mysql_fetch_assoc($result)){
         $dServer[] = $row["booth"];
     }
+    /*i don't need to put into JS at all, I can just use PHP with the existing PHP that creates the map.
+    *create a php function that can be called in the create map below, if it returns false give it a different
+    *ID that can be styled differently.
+     * Then on the JS that add the booth to the array / form field, do a check on the id and if it's a no no
+     * don't add.
+    */
+    mysql_close($dbconn);
 ?>
-<script>
-    function fillBooths(){
-        var filledBooths=<?php echo json_encode($dServer);?>;
-        console.log(filledBooths);
-        for(i=0;i<filledBooths.length;i++){
-            console.log(filledBooths[i]);
-        }
-    }
-</script>
+
 
 <input type="button" value="test script" onClick="fillBooths()"/>
 
