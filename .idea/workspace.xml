@@ -71,9 +71,9 @@
         <entry file="file://$PROJECT_DIR$/boothmap.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.42882884">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
               <folding>
-                <marker date="1447875956123" expanded="true" signature="389:424" placeholder="SELECT booth..registeredBooths..." />
+                <marker date="1447876119987" expanded="true" signature="389:424" placeholder="SELECT booth..registeredBooths..." />
               </folding>
             </state>
           </provider>
@@ -750,9 +750,9 @@
     <entry file="file://$PROJECT_DIR$/boothmap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42882884">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
           <folding>
-            <marker date="1447875956123" expanded="true" signature="389:424" placeholder="SELECT booth..registeredBooths..." />
+            <marker date="1447876119987" expanded="true" signature="389:424" placeholder="SELECT booth..registeredBooths..." />
           </folding>
         </state>
       </provider>

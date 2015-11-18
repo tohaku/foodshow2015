@@ -15,9 +15,9 @@
 
     while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
         $tempArray=explode(",",$row["booths"]);
-        print_r($tempArray);
-
+        $galifrey = array_merge($galifrey,$tempArray);
     }
+    print_r($galifrey);
     mysql_close($dbconn);
 
     function reservedBoothCheck($boothNumber)
