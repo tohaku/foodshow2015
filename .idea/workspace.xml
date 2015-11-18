@@ -71,15 +71,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listschools.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="listschools.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/listschools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.030630631">
+              <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1447882195484" expanded="true" signature="211:285" placeholder="SELECT schoo..registeredSchools..." />
-                <marker date="1447882195484" expanded="true" signature="656:828" placeholder="..." />
+                <marker date="1447882311654" expanded="true" signature="238:312" placeholder="SELECT schoo..registeredSchools..." />
+                <marker date="1447882311654" expanded="true" signature="683:855" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -97,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64888126">
+            <state vertical-scroll-proportion="0.0">
               <caret line="211" column="20" selection-start-line="211" selection-start-column="20" selection-end-line="211" selection-end-column="20" />
               <folding />
             </state>
@@ -173,8 +173,8 @@
         <option value="$PROJECT_DIR$/schoolregistration.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/vendorregistration.php" />
-        <option value="$PROJECT_DIR$/listschools.php" />
         <option value="$PROJECT_DIR$/main.css" />
+        <option value="$PROJECT_DIR$/listschools.php" />
       </list>
     </option>
   </component>
@@ -718,17 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schoolregistration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.384615">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <marker date="1447878456315" expanded="true" signature="2245:2429" placeholder="INSERT INTO ..." />
-            <marker date="1447878456315" expanded="true" signature="5039:5088" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendorregistration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384">
@@ -760,23 +749,34 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/listschools.php">
+    <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="211" column="20" selection-start-line="211" selection-start-column="20" selection-end-line="211" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolregistration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.384615">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1447882195484" expanded="true" signature="211:285" placeholder="SELECT schoo..registeredSchools..." />
-            <marker date="1447882195484" expanded="true" signature="656:828" placeholder="..." />
+            <marker date="1447878456315" expanded="true" signature="2245:2429" placeholder="INSERT INTO ..." />
+            <marker date="1447878456315" expanded="true" signature="5039:5088" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
+    <entry file="file://$PROJECT_DIR$/listschools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64888126">
-          <caret line="211" column="20" selection-start-line="211" selection-start-column="20" selection-end-line="211" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="0.030630631">
+          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1447882311654" expanded="true" signature="238:312" placeholder="SELECT schoo..registeredSchools..." />
+            <marker date="1447882311654" expanded="true" signature="683:855" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
