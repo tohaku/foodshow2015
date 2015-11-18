@@ -150,7 +150,10 @@ try {
     mysql_close($dbconn);
     */
     $row=$dbBoothResults->fetchAll();
-    print_r($row);
+    for($countDown = 0; $countDown<sizeof($row);$countDown++){
+        $tempArray = explode(",", $row[$countDown]);
+        $galifrey = array_merge($galifrey, $tempArray);
+    }
 }
 catch(PDOException $e){
     echo "Error: ".$e->getMessage();
