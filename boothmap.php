@@ -4,18 +4,17 @@
 $totalBooths = 69;
     function reservedBoothCheck($boothNumber)
     {
-        echo "function called";
         $dbconn = mysql_connect($dbhost, $dbuser, $dbpass);
         if (!dbconn) {
             die("Couldn't connect to the database" . mysql_error());
         }
-        $sql = "SELECT booth FROM registeredBooths";
+        $sql = "SELECT booths FROM registeredBooths";
         mysql_select_db('foodshow2015');
         $retval = mysql_query($sql, $dbconn);
 
         while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
-            echo $row["booth"];
-            if($row["booth"]===$boothNumber){
+            echo $row["booths"];
+            if($row["booths"]===$boothNumber){
                 mysql_close($dbconn);
                 return true;
             }
