@@ -117,7 +117,7 @@ try {
 
     $dbBoothResults = $conn->prepare("SELECT booths FROM registeredBooths");
     $dbBoothResults->execute();
-    
+
     $row=$dbBoothResults->fetchAll();
     foreach($row as $results){
         $tempArray = explode(",", $results["booths"]);
