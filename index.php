@@ -15,7 +15,7 @@
         Hotel arrangements can be made at:<br>
         <span id="address">Courtyard Marriot Vallejo<br>
         1000 Fairgrounds Drive Vallejo CA, 94589<br>
-        (707)644-1200 / 1(800)321-2211</span><br>
+        (707)644-1200 / (800)321-2211</span><br>
         Use the link below to register online and get a discounted rate!<br>
         <a href="http://www.marriott.com/hotels/travel/sfovl-courtyard-vallejo-napa-valley/?toDate=02/13/15&groupCode=EJFEJFA&stop_mobi=yes&fromDate=02/10/15&app=resvlink" target="_blank">$119 per night for 1 king bed or 2 queen beds</a><br>
     </p>
@@ -36,7 +36,7 @@
             </ul>
         </li>
         <li>All checks must be received by 1/08/2015</li>
-        <li>Please address all checks to Goldstar Foods Norcal<br>5100 Fulton Dr Fairfield, CA 94534</li>
+        <li>Please address all checks to Gold Star Foods Norcal<br>5100 Fulton Dr Fairfield, CA 94534</li>
     </ul>
 
     <h2>Currently registered processors with more to come</h2>
