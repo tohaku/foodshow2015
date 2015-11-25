@@ -20,9 +20,25 @@
         <a href="http://www.marriott.com/hotels/travel/sfovl-courtyard-vallejo-napa-valley/?toDate=02/13/15&groupCode=EJFEJFA&stop_mobi=yes&fromDate=02/10/15&app=resvlink" target="_blank">$119 per night for 1 king bed or 2 queen beds</a><br>
     </p>
     <h2>Vendor Registration</h2>
-    <p>
-        Vendors who register early and we receive payment by 12/18/2015 are eligible for the early bird special.  Booths will cost $500 per booth or $450 if paid for before 12/18/2015.  Vendors may also share booths (2 vendors per booth max) for $300 each, $600 total or $550 total before 12/18/2015.  All checks must be received by 1/08/2015.  Please address all checks to Goldstar Foods NorCal at 5100 Fulton Dr. Fairfield, CA 94534 to ensure that we receive your payment on time.
-    </p>
+    <ul>
+        <li>$500 per booth</li>
+        <li>Vendors may share booths
+            <ul>
+                <li>2 vendors max per booth</li>
+                <li>$300 each, $600 total for the booth</li>
+            </ul>
+        </li>
+        <li>Early bird special
+            <ul>
+                <li>We need to receive payment by 12/18/2015</li>
+                <li>$450 Per Booth</li>
+                <li>$550 total for shared booths</li>
+            </ul>
+        </li>
+        <li>All checks must be received by 1/08/2015</li>
+        <li>Please address all checks to Goldstar Foods Norcal<br>5100 Fulton Dr Fairfield, CA 94534</li>
+    </ul>
+
     <h2>Currently registered processors with more to come</h2>
     <?php
     $dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
