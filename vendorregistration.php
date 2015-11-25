@@ -142,9 +142,7 @@ function testInput($data){
     <h3>Vendor Registration</h3>
     <?php
         if(new DateTime() < new DateTime("2015-12-18 16:00:00")){
-            echo "<p>Early bird registration rates are still available if payment is received by 12/18/2015</p>";
-        }else{
-            echo "<p>Sorry the time has passed for the early bird registration rates.</p>";
+            echo "<p>Early bird registration rates are still available</p>";
         }
     ?>
     <p>Please address all checks to Goldstar Foods NorCal at<br> 5100 Fulton Dr Fairfield, CA 94534<br>All checks are due by 1/08/2015 at the latest.</p>

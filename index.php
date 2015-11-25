@@ -25,13 +25,13 @@
         <li>Vendors may share booths
             <ul>
                 <li>2 vendors max per booth</li>
-                <li>$300 each, $600 total for the booth</li>
+                <li>$300 each, $600 total</li>
             </ul>
         </li>
         <li>Early bird special
             <ul>
-                <li>We need to receive payment by 12/18/2015</li>
-                <li>$450 Per Booth</li>
+                <li>Eligible if paid by 12/18/2015</li>
+                <li>$450 per booth</li>
                 <li>$550 total for shared booths</li>
             </ul>
         </li>
