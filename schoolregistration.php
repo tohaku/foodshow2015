@@ -1,6 +1,6 @@
 <?php
     $pageTitle = "School Registration";
-    $pageHeader = "Goldstar Norcal Food Show 2016";
+    $pageHeader = "Gold Star Norcal Food Show 2016";
     $section = "school";
 ?>
 
@@ -100,6 +100,7 @@
         $data = trim($data);
         $data = stripslashes($data);
         $data = htmlspecialchars($data);
+        $data = str_replace("'","",$data);
         return $data;
     }
 ?>

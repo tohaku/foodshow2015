@@ -1,5 +1,6 @@
 <?php require_once("inc/config.php");?>
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <html lang="en">
 <head>
     <title><?php echo $pageTitle; ?></title>
@@ -41,8 +42,8 @@
     </script>
 </head>
 <body>
-<div class = "header" style="background-color:<?php if($section=='school'){echo '#B39DDB';}elseif($section=='vendor'){echo '#00BFA5';}elseif($section=='directions'){echo '#8D6E63';}?>;">
-    <span id="pageTitle"><a href="index.php"><img src="pics/gsfLogo.png">Slic COOP Food Show 2016 </img></a></span>
+<div class = "header" style="background-color:<?php if($section=='school'){echo '#B39DDB';}elseif($section=='vendor'){echo '#00BFA5';}elseif($section=='directions'){echo '#8D6E63';}elseif($section=='submitted'){echo '#B39DD8';}?>;">
+    <span id="pageTitle"><a href="index.php"><img src="pics/gsfLogo.png">SLIC Coop Food Show 2016 </img></a></span>
     <ul class="nav">
         <li class="<?php if ($section=="info"){echo"selectedPage";}?>"><a href="index.php">Information</a></li>
         <li class="<?php if ($section=="school"){echo"selectedPage";}?>"><a href="schoolregistration.php">School Registration</a></li>

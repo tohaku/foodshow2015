@@ -134,6 +134,7 @@ function testInput($data){
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
+    $data = str_replace("'","",$data);
     return $data;
 }
 ?>
@@ -145,7 +146,7 @@ function testInput($data){
             echo "<p>Early bird registration rates are still available</p>";
         }
     ?>
-    <p>Please address all checks to Goldstar Foods NorCal at<br> 5100 Fulton Dr Fairfield, CA 94534<br>All checks are due by 1/08/2015 at the latest.</p>
+    <p>Please address all checks to Gold Star Foods NorCal at<br> 5100 Fulton Dr Fairfield, CA 94534<br>All checks are due by 1/08/2015 at the latest.</p>
     <form method="post" action="<?php $_PHP_SELF ?>" class="registrationForms" name="vendorRegistration" accept-charset="utf-8">
         <?php if($formError){echo "<p class='formError'>Error: Please recheck your information</p>";}?>
         <label for="vendorName">Vendor Name:</label>

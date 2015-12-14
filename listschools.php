@@ -1,28 +1,28 @@
+<?php
+$pageTitle = "School Registration";
+$pageHeader = "Gold Star Norcal Food Show 2016";
+    $section = "listSchools";
+?>
 <?php require("navbar.php");?>
 <div style="background-color: #fff;">
 <?php
-$dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
+echo "<table style='margin:0 auto'>";
+try {
+    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-if (!dbconn){
-    die("Couldn't connect to the database". mysql_error());
+    $dbResults = $conn->prepare("SELECT schoolName, FName, LName, phoneNumber, email FROM registeredSchools ORDER BY schoolName");
+    $dbResults->execute();
+
+    $row=$dbResults->fetchAll();
+    foreach($row as $results){
+        echo "<tr><td style='padding: 4px;'>".$results["schoolName"]."</td><td style='padding: 4px;'>".$results["FName"]."</td><td style='padding: 4px;'>".$results["LName"]."</td><td style='padding: 4px;'>".$results["phoneNumber"]."</td>";
+    }
 }
-
-$sql = "SELECT schoolName, FName, LName, phoneNumber, email FROM registeredSchools ORDER BY schoolName ASC";
-mysql_select_db('foodshow2015');
-$retval = mysql_query($sql,$dbconn);
-
-if(!retval){
-    die("Sadly it didn't not connect to the database: ". mysql_error());
+catch(PDOException $e){
+    echo "Error: ".$e->getMessage();
 }
-echo "<table id='schoolListTable'>".
-    "<tr><th>School Name</th><th>First Name</th><th>Last name</th><th>Phone #</th><th>Email</th></tr>";
-while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
-    echo "<tr>";
-    echo "<td>".$row["schoolName"]."</td><td>".$row["FName"]."</td><td>".$row["LName"]."</td><td>".$row["phoneNumber"]."</td><td>".$row["email"]."</td>";
-    echo "</tr>";
-}
-
-mysql_close($dbconn);
+$conn = null;
 echo "</table>";
 ?>
 </div>

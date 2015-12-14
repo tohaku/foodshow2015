@@ -1,6 +1,6 @@
 <?php
     $pageTitle = "Food Show 2015";
-    $pageHeader = "Goldstar Norcal Food Show 2016";
+    $pageHeader = "Gold Star Norcal Food Show 2016";
     $section = "info";
 ?>
 
@@ -13,15 +13,28 @@
         Vendors may come in as early as 6:30am to setup before the event starts.<br>
         <br>
         Hotel arrangements can be made at:<br>
-        <span id="address">Courtyard Marriot Vallejo<br>
+        <span id="address">Courtyard Marriott Vallejo<br>
         1000 Fairgrounds Drive Vallejo CA, 94589<br>
         (707)644-1200 / (800)321-2211</span><br>
-        Use the link below to register online and get a discounted rate!<br>
-        <a href="http://www.marriott.com/hotels/travel/sfovl-courtyard-vallejo-napa-valley/?toDate=02/13/15&groupCode=EJFEJFA&stop_mobi=yes&fromDate=02/10/15&app=resvlink" target="_blank">$119 per night for 1 king bed or 2 queen beds</a><br>
+        Rooms have been put on hold until January 10th to lock in lower rates for event attendees.  We recommend calling the Marriott to make reservations instead of reserving rooms online to ensure you get the lower rates.  Let them know it's for the Gold Star Foods food show.<br>
+        <a href="http://www.marriott.com/hotels/travel/sfovl-courtyard-vallejo-napa-valley" target="_blank">Marriott Hotel Vallejo</a><br>
     </p>
     <h2>Vendor Registration</h2>
     <ul>
         <li>$500 per booth</li>
+        <li>Each booth comes with
+            <ul>
+                <li>Two 8' tables w/ covers</li>
+                <li>Two chairs</li>
+                <li>Electricity via spider boxes
+                    <ul>
+                        <li>Must provide your own cables</li>
+                    </ul>
+                </li>
+                <li>Kitchen facilities</li>
+                <li>Garbage cans placed around the hall</li>
+            </ul>
+        </li>
         <li>Vendors may share booths
             <ul>
                 <li>2 vendors max per booth</li>
@@ -39,26 +52,27 @@
         <li>Please address all checks to Gold Star Foods Norcal<br>5100 Fulton Dr Fairfield, CA 94534</li>
     </ul>
 
-    <h2>Currently registered processors with more to come</h2>
+    <h2>Currently registered vendors with more to come</h2>
     <?php
-    $dbconn = mysql_connect($dbhost,$dbuser,$dbpass);
+    try {
+        $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    if (!dbconn){
-        die("Couldn't connect to the database". mysql_error());
-    }
-    $sql = "SELECT vendorName FROM vendorRegistration ORDER BY vendorName ASC";
-    mysql_select_db('foodshow2015');
-    $retval = mysql_query($sql,$dbconn);
+        $registeredVendors = $conn->prepare("SELECT vendorName FROM vendorRegistration ORDER BY vendorName ASC");
+        $registeredVendors->execute();
 
-    if(!retval){
-        die("Sadly it didn't not connect to the database: ". mysql_error());
+        $row=$registeredVendors->fetchAll();
+        echo "<ul>";
+        foreach($row as $results){
+            echo "<li>".$results["vendorName"]."</li>";
+        }
+        echo "</ul>";
     }
-    echo "<ul>";
-    while($row = mysql_fetch_array($retval, MYSQL_ASSOC)){
-        echo "<li>".$row["vendorName"]."</li>";
+    catch(PDOException $e){
+        echo "Error: ".$e->getMessage();
     }
-    mysql_close($dbconn);
-    echo "</ul>";
+    $conn = null;
+
     ?>
 </div>
 </body>
