@@ -4,7 +4,6 @@
 <html lang="en">
 <head>
     <title><?php echo $pageTitle; ?></title>
-    <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
@@ -47,7 +46,7 @@
     <ul class="nav">
         <li class="<?php if ($section=="info"){echo"selectedPage";}?>"><a href="index.php">Information</a></li>
         <li class="<?php if ($section=="school"){echo"selectedPage";}?>"><a href="schoolregistration.php">School Registration</a></li>
-        <li class="<?php if ($section=="vendor"){echo"selectedPage";}?>"><a href="vendorregistration.php">Vendor Registration</a></li>
+        <li class="<?php if ($section=="vendor"){echo"selectedPage";}?>"><a href="vendorregistration2.php">Vendor Registration</a></li>
         <li class="<?php if ($section=="directions"){echo"selectedPage";}?>"><a href="directions.php">Directions</a></li>
     </ul>
 </div>

@@ -132,8 +132,8 @@ label {
 }
 
 #floorMap {
-    width: 820px; /*added one more booth width*/
-    min-height: 455px; /*added addition row height*/
+    width: 820px;
+    min-height: 420px;
     margin: 40px auto 10px;
     padding: 2px;
     background-color: #fff;
@@ -154,18 +154,15 @@ label {
 }
 
 #boothRow2 {
-    margin-left: 35px;
-}
-
-#boothRow3 {
     margin-top: 35px;
     margin-left: 35px;
 }
 
-#boothRow4 {
+#boothRow3 {
     margin-left: 35px;
 }
-#boothRow5 {
+
+#boothRow4 {
     margin-top: 35px;
 }
 
@@ -194,10 +191,19 @@ label {
     background-color: #BBDEFB;
 }
 
-#booth40, #booth56, #booth42, #booth58 {
+#booth10 {
     margin-left: 35px;
 }
-#booth9, #booth25, #booth74 {
+
+#booth27 {
+    margin-left: 35px;
+}
+
+#booth44 {
+    margin-left: 35px;
+}
+
+#booth65 {
     margin-left: 70px;
 }
 
