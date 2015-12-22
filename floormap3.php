@@ -69,7 +69,7 @@ $conn = null;
             echo "<div id='booth88'>Registration</div>";
         }
         else{
-            echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            echo "<div class='booth' id='booth" . ($counter + 1) . "' onclick='registerBooth(this.id)'>" . ($counter +1). "</div>";
             if($counter == $totalBooths){
                 echo "</div>";
             }
