@@ -22,22 +22,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="floormap3.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="floormap3.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/floormap3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
-              <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.7045045">
+              <caret line="71" column="120" selection-start-line="71" selection-start-column="120" selection-end-line="71" selection-end-column="120" />
               <folding>
-                <marker date="1450817683056" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
+                <marker date="1450817879065" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73666096">
+            <state vertical-scroll-proportion="0.0">
               <caret line="192" column="58" selection-start-line="192" selection-start-column="58" selection-end-line="192" selection-end-column="58" />
               <folding />
             </state>
@@ -81,8 +81,8 @@
         <option value="C:/wamp/www/foodshow/vendorregistration2.php" />
         <option value="C:/wamp/www/foodshow/navbar.php" />
         <option value="C:/wamp/www/foodshow/floormap3.php" />
-        <option value="$PROJECT_DIR$/floormap3.php" />
         <option value="$PROJECT_DIR$/main.css" />
+        <option value="$PROJECT_DIR$/floormap3.php" />
       </list>
     </option>
   </component>
@@ -599,21 +599,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/floormap3.php">
+    <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-          <folding>
-            <marker date="1450817683056" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="192" column="58" selection-start-line="192" selection-start-column="58" selection-end-line="192" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
+    <entry file="file://$PROJECT_DIR$/floormap3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73666096">
-          <caret line="192" column="58" selection-start-line="192" selection-start-column="58" selection-end-line="192" selection-end-column="58" />
-          <folding />
+        <state vertical-scroll-proportion="0.7045045">
+          <caret line="71" column="120" selection-start-line="71" selection-start-column="120" selection-end-line="71" selection-end-column="120" />
+          <folding>
+            <marker date="1450817879065" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
+          </folding>
         </state>
       </provider>
     </entry>
