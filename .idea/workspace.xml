@@ -26,9 +26,9 @@
         <entry file="file://$PROJECT_DIR$/floormap3.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6126126">
-              <caret line="68" column="56" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="56" />
+              <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
               <folding>
-                <marker date="1450817595379" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
+                <marker date="1450817683056" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
               </folding>
             </state>
           </provider>
@@ -610,9 +610,9 @@
     <entry file="file://$PROJECT_DIR$/floormap3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6126126">
-          <caret line="68" column="56" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="56" />
+          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
           <folding>
-            <marker date="1450817595379" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
+            <marker date="1450817683056" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
           </folding>
         </state>
       </provider>
