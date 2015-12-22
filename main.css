@@ -148,25 +148,21 @@ label {
     font-weight: bold;
 }
 
-#boothRow1{
+#boothRow1, #boothRow3{
     margin-top: 35px;
     margin-left: 35px;
 }
 
-#boothRow2 {
+#boothRow2, #boothRow4 {
     margin-left: 35px;
 }
 
-#boothRow3 {
-    margin-top: 35px;
-    margin-left: 35px;
-}
-
-#boothRow4 {
-    margin-left: 35px;
-}
 #boothRow5 {
     margin-top: 35px;
+}
+
+#boothRow6{
+    margin-left: 210px;
 }
 
 .booth {
@@ -194,11 +190,11 @@ label {
     background-color: #BBDEFB;
 }
 
-#booth40, #booth56, #booth42, #booth58 {
+#booth10, #booth27, #booth44, #booth61, #booth79, #booth91 {
     margin-left: 35px;
 }
-#booth9, #booth25, #booth74 {
-    margin-left: 70px;
+#booth88{
+    width:70px;
 }
 
 #schoolListTable{
