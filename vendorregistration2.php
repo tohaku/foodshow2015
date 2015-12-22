@@ -222,13 +222,13 @@ function testInput($data){
         }
         elseif($counter == 88){
             echo "</div><div id='boothRow6'>";
-            echo "<div class='booth' id='registrationBooth'>Registration</div>";
+            echo "<div class='booth' id='booth88'>Registration</div>";
         }
         else{
             if(in_array($timeLords,$galifrey)){
-                echo "<div class='boothReserved' id='booth" . ($counter -3) . "'>X</div>";
+                echo "<div class='boothReserved' id='booth" . $counter . "'>X</div>";
             }else {
-                echo "<div class='booth' id='booth" . ($counter - 3) . "' onclick='registerBooth(this.id)'>" . ($counter - 3) . "</div>";
+                echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . ($counter - 1) . "</div>";
             }
             if($counter == $totalBooths){
                 echo "</div>";

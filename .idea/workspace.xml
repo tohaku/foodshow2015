@@ -25,8 +25,8 @@
       <file leaf-file-name="floormap3.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/floormap3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="81" column="6" selection-start-line="27" selection-start-column="0" selection-end-line="81" selection-end-column="6" />
+            <state vertical-scroll-proportion="-7.6153846">
+              <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
               <folding>
                 <marker date="1450817960821" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
               </folding>
@@ -34,25 +34,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="195" column="18" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.70223755">
+              <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vendorregistration2.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vendorregistration2.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendorregistration2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4900901">
-              <caret line="185" column="13" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="13" />
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="229" column="19" selection-start-line="229" selection-start-column="19" selection-end-line="229" selection-end-column="19" />
               <folding>
-                <marker date="1450819060934" expanded="true" signature="2559:2765" placeholder="INSERT INTO ..." />
-                <marker date="1450819060934" expanded="true" signature="2789:2891" placeholder="INSERT INTO ..." />
-                <marker date="1450819060934" expanded="true" signature="3409:3445" placeholder="SELECT booth..registeredBooths2..." />
+                <marker date="1450819526909" expanded="true" signature="2559:2765" placeholder="INSERT INTO ..." />
+                <marker date="1450819526909" expanded="true" signature="2789:2891" placeholder="INSERT INTO ..." />
+                <marker date="1450819526909" expanded="true" signature="3409:3445" placeholder="SELECT booth..registeredBooths2..." />
               </folding>
             </state>
           </provider>
@@ -95,9 +95,9 @@
         <option value="C:/wamp/www/foodshow/vendorregistration2.php" />
         <option value="C:/wamp/www/foodshow/navbar.php" />
         <option value="C:/wamp/www/foodshow/floormap3.php" />
-        <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/floormap3.php" />
         <option value="$PROJECT_DIR$/vendorregistration2.php" />
+        <option value="$PROJECT_DIR$/main.css" />
       </list>
     </option>
   </component>
@@ -200,7 +200,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2686818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -592,16 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/floormap3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="81" column="6" selection-start-line="27" selection-start-column="0" selection-end-line="81" selection-end-column="6" />
-          <folding>
-            <marker date="1450817960821" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/wamp/www/foodshow/vendorregistration2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5099099">
@@ -614,23 +604,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
+    <entry file="file://$PROJECT_DIR$/floormap3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="195" column="18" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="-7.6153846">
+          <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
+          <folding>
+            <marker date="1450817960821" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendorregistration2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4900901">
-          <caret line="185" column="13" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="13" />
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="229" column="19" selection-start-line="229" selection-start-column="19" selection-end-line="229" selection-end-column="19" />
           <folding>
-            <marker date="1450819060934" expanded="true" signature="2559:2765" placeholder="INSERT INTO ..." />
-            <marker date="1450819060934" expanded="true" signature="2789:2891" placeholder="INSERT INTO ..." />
-            <marker date="1450819060934" expanded="true" signature="3409:3445" placeholder="SELECT booth..registeredBooths2..." />
+            <marker date="1450819526909" expanded="true" signature="2559:2765" placeholder="INSERT INTO ..." />
+            <marker date="1450819526909" expanded="true" signature="2789:2891" placeholder="INSERT INTO ..." />
+            <marker date="1450819526909" expanded="true" signature="3409:3445" placeholder="SELECT booth..registeredBooths2..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70223755">
+          <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
