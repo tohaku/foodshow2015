@@ -190,10 +190,10 @@ label {
     background-color: #BBDEFB;
 }
 
-#booth10, #booth27, #booth44, #booth61, #booth79, #booth90 {
+#booth10, #booth27, #booth44, #booth61, #booth79, #booth88 {
     margin-left: 35px;
 }
-#booth88{
+#registrationBooth{
     width:105px;
     padding: 2px 6px;
 }

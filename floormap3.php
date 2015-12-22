@@ -66,7 +66,7 @@ $conn = null;
         }
         elseif($counter == 88){
             echo "</div><div id='boothRow6'>";
-            echo "<div class='booth' id='booth88'>Registration</div>";
+            echo "<div class='booth' id='registrationBooth'>Registration</div>";
         }
         else{
             echo "<div class='booth' id='booth" . ($counter - 3) . "' onclick='registerBooth(this.id)'>" . ($counter - 3). "</div>";

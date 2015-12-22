@@ -25,10 +25,10 @@
       <file leaf-file-name="floormap3.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/floormap3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7045045">
-              <caret line="71" column="120" selection-start-line="71" selection-start-column="120" selection-end-line="71" selection-end-column="120" />
+            <state vertical-scroll-proportion="0.6126126">
+              <caret line="68" column="58" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
               <folding>
-                <marker date="1450817879065" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
+                <marker date="1450817960821" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
               </folding>
             </state>
           </provider>
@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="192" column="58" selection-start-line="192" selection-start-column="58" selection-end-line="192" selection-end-column="58" />
+              <caret line="195" column="18" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -602,17 +602,17 @@
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="192" column="58" selection-start-line="192" selection-start-column="58" selection-end-line="192" selection-end-column="58" />
+          <caret line="195" column="18" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/floormap3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7045045">
-          <caret line="71" column="120" selection-start-line="71" selection-start-column="120" selection-end-line="71" selection-end-column="120" />
+        <state vertical-scroll-proportion="0.6126126">
+          <caret line="68" column="58" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
           <folding>
-            <marker date="1450817879065" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
+            <marker date="1450817960821" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
           </folding>
         </state>
       </provider>
