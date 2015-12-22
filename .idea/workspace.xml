@@ -22,27 +22,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="floormap3.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="floormap3.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/floormap3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.481081">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="81" column="6" selection-start-line="27" selection-start-column="0" selection-end-line="81" selection-end-column="6" />
               <folding>
                 <marker date="1450817960821" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vendorregistration2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendorregistration2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-              <folding>
-                <marker date="1450818172184" expanded="true" signature="2559:2765" placeholder="INSERT INTO ..." />
-                <marker date="1450818172184" expanded="true" signature="2789:2891" placeholder="INSERT INTO ..." />
-                <marker date="1450818172184" expanded="true" signature="3409:3445" placeholder="SELECT booth..registeredBooths2..." />
               </folding>
             </state>
           </provider>
@@ -54,6 +40,20 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="195" column="18" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vendorregistration2.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendorregistration2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4900901">
+              <caret line="185" column="13" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="13" />
+              <folding>
+                <marker date="1450819060934" expanded="true" signature="2559:2765" placeholder="INSERT INTO ..." />
+                <marker date="1450819060934" expanded="true" signature="2789:2891" placeholder="INSERT INTO ..." />
+                <marker date="1450819060934" expanded="true" signature="3409:3445" placeholder="SELECT booth..registeredBooths2..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -547,7 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,7 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="101" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -563,7 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -571,15 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/wamp/www/foodshow/vendorregistration2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5099099">
-          <caret line="224" column="9" selection-start-line="224" selection-start-column="9" selection-end-line="224" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,7 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,7 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,7 +589,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18072289">
           <caret line="150" column="10" selection-start-line="150" selection-start-column="10" selection-end-line="150" selection-end-column="10" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/floormap3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="81" column="6" selection-start-line="27" selection-start-column="0" selection-end-line="81" selection-end-column="6" />
+          <folding>
+            <marker date="1450817960821" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/wamp/www/foodshow/vendorregistration2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5099099">
+          <caret line="224" column="9" selection-start-line="224" selection-start-column="9" selection-end-line="224" selection-end-column="9" />
+          <folding>
+            <marker date="1450818904551" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1450818904551" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1450818904551" expanded="true" signature="-1:-1" placeholder="SELECT booth..registeredBooths2..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -617,22 +624,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendorregistration2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.4900901">
+          <caret line="185" column="13" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="13" />
           <folding>
-            <marker date="1450818172184" expanded="true" signature="2559:2765" placeholder="INSERT INTO ..." />
-            <marker date="1450818172184" expanded="true" signature="2789:2891" placeholder="INSERT INTO ..." />
-            <marker date="1450818172184" expanded="true" signature="3409:3445" placeholder="SELECT booth..registeredBooths2..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/floormap3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.481081">
-          <caret line="81" column="6" selection-start-line="27" selection-start-column="0" selection-end-line="81" selection-end-column="6" />
-          <folding>
-            <marker date="1450817960821" expanded="true" signature="373:408" placeholder="SELECT booth..registeredBooths..." />
+            <marker date="1450819060934" expanded="true" signature="2559:2765" placeholder="INSERT INTO ..." />
+            <marker date="1450819060934" expanded="true" signature="2789:2891" placeholder="INSERT INTO ..." />
+            <marker date="1450819060934" expanded="true" signature="3409:3445" placeholder="SELECT booth..registeredBooths2..." />
           </folding>
         </state>
       </provider>

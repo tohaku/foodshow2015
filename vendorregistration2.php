@@ -173,7 +173,7 @@ function testInput($data){
         $timeLords = "booth".$counter;
         if($counter<18) {
             if($counter == 1){echo "<div id='boothRow1'>";}
-            if(in_array($timeLords,$galifrey2)){
+            if(in_array($timeLords,$galifrey)){
                 echo "<div class='boothReserved' id='booth" . $counter . "'>X</div>";
             }
             else {
@@ -184,32 +184,52 @@ function testInput($data){
             if($counter == 18) {
                 echo "</div><div id='boothRow2'>";
             }
-            echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            if(in_array($timeLords,$galifrey)){
+                echo "<div class='boothReserved' id='booth" . $counter . "'>X</div>";
+            }else {
+                echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            }
         }
         elseif($counter<52){
             if($counter == 35){
                 echo "</div><div id='boothRow3'>";
             }
-            echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            if(in_array($timeLords,$galifrey)){
+                echo "<div class='boothReserved' id='booth" . $counter . "'>X</div>";
+            }else{
+                echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            }
         }
         elseif($counter<69){
             if($counter == 52){
                 echo "</div><div id='boothRow4'>";
             }
-            echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            if(in_array($timeLords,$galifrey)){
+                echo "<div class='boothReserved' id='booth" . $counter . "'>X</div>";
+            }else {
+                echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            }
         }
         elseif($counter<88){
             if($counter == 69){
                 echo "</div><div id='boothRow5'>";
             }
-            echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            if(in_array($timeLords,$galifrey)){
+                echo "<div class='boothReserved' id='booth" . $counter . "'>X</div>";
+            }else{
+                echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
+            }
         }
         elseif($counter == 88){
             echo "</div><div id='boothRow6'>";
             echo "<div class='booth' id='registrationBooth'>Registration</div>";
         }
         else{
-            echo "<div class='booth' id='booth" . ($counter - 3) . "' onclick='registerBooth(this.id)'>" . ($counter - 3). "</div>";
+            if(in_array($timeLords,$galifrey)){
+                echo "<div class='boothReserved' id='booth" . ($counter -3) . "'>X</div>";
+            }else {
+                echo "<div class='booth' id='booth" . ($counter - 3) . "' onclick='registerBooth(this.id)'>" . ($counter - 3) . "</div>";
+            }
             if($counter == $totalBooths){
                 echo "</div>";
             }
