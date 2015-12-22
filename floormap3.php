@@ -47,7 +47,7 @@ $conn = null;
             echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
         }
         elseif($counter<52){
-            if($counter == 18){
+            if($counter == 35){
                 echo "</div><div id='boothRow3'>";
             }
             echo "<div class='booth' id='booth" . $counter . "' onclick='registerBooth(this.id)'>" . $counter . "</div>";
