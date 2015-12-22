@@ -6,7 +6,7 @@ require("navbar.php");
 ?>
 
 <?php
-$totalBooths = "82";
+$totalBooths = "93";
 $galifrey = [];//array to store all booth DB results
 
 
